@@ -1,7 +1,7 @@
 {
-  "updated_at": "",
+  "updated_at": "2026-06-04T11:22:58Z",
   "source_count": 6,
-  "item_count": 0,
+  "item_count": 16,
   "category_labels": {
     "ui": "UI/UX",
     "tools": "Software & Tools",
@@ -10,5 +10,198 @@
     "motion": "Motion & Plugins",
     "general": "Design"
   },
-  "items": []
+  "items": [
+    {
+      "id": "a49f665a4d",
+      "title": "How To Make Your Design System AI-Ready",
+      "summary_original": "AI-generated prototypes often don't deliver consistently decent results because of tiny inconsistencies scattered all across a design system. I's decisions made but not documented, hard-coded values never cleaned up, or relying too much on AI making sense of mock-ups or design flows on its own. Yesterday I stumbled upon a useful practical guide by Hardik Pandya from Atlassian — on how to reduce drifts , minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Let’s see how it works. 1. Design Decisions Are Infrastructure Unsurprisingly, better AI prototypes come",
+      "image": "http://files.smashing.media/articles/how-make-design-system-ai-ready/how-make-design-system-ai-ready.jpg",
+      "url": "https://smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Wed, 03 Jun 2026 13:00:00 GMT",
+      "title_de": "How To Make Your Design System AI-Ready",
+      "summary_de": "AI-generated prototypes often don't deliver consistently decent results because of tiny inconsistencies scattered all across a design system. I's decisions made but not documented, hard-coded values never cleaned up, or relying too much on AI making sense of mock-ups or design flows on its own. Yesterday I stumbled upon a useful practical guide by Hardik Pandya from Atlassian — on how to reduce drifts , minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Let’s see how it works. 1. Design Decisions Are Infrastructure Unsurprisingly, better AI prototypes come"
+    },
+    {
+      "id": "c1e41795fe",
+      "title": "June Is For Exploring (2026 Wallpapers Edition)",
+      "summary_original": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers series has been all about for over 15 years now. It’s a chance to step away from the everyday and dive into a fun, creative project. And this month is no different! Talented artists and designers from all o",
+      "image": "http://files.smashing.media/articles/desktop-wallpaper-calendars-june-2026/jun-26-drifting-into-june-preview-opt.png",
+      "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Sun, 31 May 2026 08:00:00 GMT",
+      "title_de": "June Is For Exploring (2026 Wallpapers Edition)",
+      "summary_de": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers series has been all about for over 15 years now. It’s a chance to step away from the everyday and dive into a fun, creative project. And this month is no different! Talented artists and designers from all o"
+    },
+    {
+      "id": "52c864579d",
+      "title": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
+      "summary_original": "The HTTP Archive Web Almanac has been tracking color contrast failures for years. The numbers have barely moved. After half a decade of design system tooling, accessibility linters, and entire JavaScript libraries dedicated to computing readable text colors, 70% of websites still fail basic WCAG contrast checks in 2025 . The WebAIM Million paints an even grimmer picture — 83.9% of homepages flagged for low contrast text in 2026, up from 79.1% in 2025. The rate improves by maybe a few percentage points per year on one benchmark and actually gets worse on another. That’s not progress — that’s pr",
+      "image": "http://files.smashing.media/articles/building-self-correcting-color-systems-contrast-color/building-self-correcting-color-systems-contrast-color.jpg",
+      "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Thu, 28 May 2026 13:00:00 GMT",
+      "title_de": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
+      "summary_de": "The HTTP Archive Web Almanac has been tracking color contrast failures for years. The numbers have barely moved. After half a decade of design system tooling, accessibility linters, and entire JavaScript libraries dedicated to computing readable text colors, 70% of websites still fail basic WCAG contrast checks in 2025 . The WebAIM Million paints an even grimmer picture — 83.9% of homepages flagged for low contrast text in 2026, up from 79.1% in 2025. The rate improves by maybe a few percentage points per year on one benchmark and actually gets worse on another. That’s not progress — that’s pr"
+    },
+    {
+      "id": "dc1dbd9bdf",
+      "title": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
+      "summary_original": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product testing, the problem is sharper. Finance users are trained to notice when something feels off: a balance that doesn’t add up, a field that accepts anything. When a banking prototype skips real authen",
+      "image": "http://files.smashing.media/articles/prototype-users-fix-protopie/prototype-users-fix-protopie.jpg",
+      "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Mon, 25 May 2026 12:00:00 GMT",
+      "title_de": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
+      "summary_de": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product testing, the problem is sharper. Finance users are trained to notice when something feels off: a balance that doesn’t add up, a field that accepts anything. When a banking prototype skips real authen"
+    },
+    {
+      "id": "f5b1ab98a5",
+      "title": "My top useful 3D prints for the Ikea Skadis pegboard",
+      "summary_original": "I 3D printed this Ikea Skadis accessory to hold my Pokeball.",
+      "image": "https://cdn.mos.cms.futurecdn.net/e7kgjwjf9ZREZB2wpT66iP-1280-80.jpg",
+      "url": "https://www.creativebloq.com/3d/3d-printing/my-top-useful-3d-prints-for-the-ikea-skadis-pegboard",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Thu, 04 Jun 2026 11:00:00 +0000",
+      "title_de": "My top useful 3D prints for the Ikea Skadis pegboard",
+      "summary_de": "I 3D printed this Ikea Skadis accessory to hold my Pokeball."
+    },
+    {
+      "id": "2f018a717b",
+      "title": "This reality-bending optical illusion will make you question everything",
+      "summary_original": "Optical illusion of a warped block of flats",
+      "image": "https://cdn.mos.cms.futurecdn.net/3FPrSRQnoZE7pFRLTbHVND-1280-80.jpg",
+      "url": "https://www.creativebloq.com/creative-inspiration/optical-illusions/this-reality-bending-optical-illusion-will-make-you-question-everything",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Thu, 04 Jun 2026 09:00:00 +0000",
+      "title_de": "This reality-bending optical illusion will make you question everything",
+      "summary_de": "Optical illusion of a warped block of flats"
+    },
+    {
+      "id": "4f5cfb6d54",
+      "title": "This Bluetooth headphone uses 3 driver types and has a replaceable battery – and I think it's the future!",
+      "summary_original": "Noble Audio Fokus Artemis",
+      "image": "https://cdn.mos.cms.futurecdn.net/UJnVnpvZSjYRqUUHoUAy9B-1280-80.jpg",
+      "url": "https://www.creativebloq.com/tech/headphones-earbuds/noble-audio-packs-3-drivers-into-new-over-ear-wireless-headphones",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Thu, 04 Jun 2026 08:17:06 +0000",
+      "title_de": "This Bluetooth headphone uses 3 driver types and has a replaceable battery – and I think it's the future!",
+      "summary_de": "Noble Audio Fokus Artemis"
+    },
+    {
+      "id": "dcfe8e3201",
+      "title": "The Mound hands-on: trust breaks down fast in this extraction nightmare",
+      "summary_original": "The Mound: Omen of Cthulhu",
+      "image": "https://cdn.mos.cms.futurecdn.net/XQ8ePyyr23vHgg6CTmY2em-1280-80.jpg",
+      "url": "https://www.creativebloq.com/entertainment/gaming/the-mound-hands-on-trust-breaks-down-fast-in-this-extraction-nightmare",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Thu, 04 Jun 2026 08:00:00 +0000",
+      "title_de": "The Mound hands-on: trust breaks down fast in this extraction nightmare",
+      "summary_de": "The Mound: Omen of Cthulhu"
+    },
+    {
+      "id": "c0f5575c03",
+      "title": "The perfect Knicks orange? It’s actually carrot",
+      "summary_original": "When the MTA painted the subway station entrance at 34th Street and Eighth Avenue just outside Madison Square Garden in team colors to commemorate the New York Knicks’ first appearance in the NBA Finals since 1999, the blue looked perfect, but MTA's creative team knew the orange wasn't a match. \"We are New Yorkers. We are Knicks fans. We know this didn't feel right,\" Gene Ribeiro, deputy chief customer officer for the MTA, tells Fast Company . \"We just wanted it to be absolutely perfect.\" It turns out achieving perfection wasn't as easy as pulling a Pantone swatch. It required a late-night sea",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91553148-knicks-orange-mta.jpg",
+      "url": "https://www.fastcompany.com/91553148/knicks-orange-color-match-mta-subway-station-entrance?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-04T10:30:00",
+      "title_de": "The perfect Knicks orange? It’s actually carrot",
+      "summary_de": "When the MTA painted the subway station entrance at 34th Street and Eighth Avenue just outside Madison Square Garden in team colors to commemorate the New York Knicks’ first appearance in the NBA Finals since 1999, the blue looked perfect, but MTA's creative team knew the orange wasn't a match. \"We are New Yorkers. We are Knicks fans. We know this didn't feel right,\" Gene Ribeiro, deputy chief customer officer for the MTA, tells Fast Company . \"We just wanted it to be absolutely perfect.\" It turns out achieving perfection wasn't as easy as pulling a Pantone swatch. It required a late-night sea"
+    },
+    {
+      "id": "39f03a7e9d",
+      "title": "Brands, beware! Microdramas just might be the next metaverse",
+      "summary_original": "A young woman notices a pair of Crocs outside her neighbor’s apartment door. But there’s a huge problem. The Crocs don’t have a single Jibbitz charm. So she decides to take a charm off her own Crocs and put it on the shoes of her mysterious neighbor. That's the start to Charmed to Meet You , a scripted microdrama that launched in February on the ReelShort app. Apparently inspired by a true story involving a Crocs employee, it chronicles a flirty dialogue told across five short-form episodes. So far, it's attracted more than 10 million views. Microdramas—serialized episodes that run less than t",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/05/p-1-91543096-microdramas-the-new-metaverse.jpg",
+      "url": "https://www.fastcompany.com/91543096/microdramas-just-might-be-the-next-metaverse?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-04T10:00:00",
+      "title_de": "Brands, beware! Microdramas just might be the next metaverse",
+      "summary_de": "A young woman notices a pair of Crocs outside her neighbor’s apartment door. But there’s a huge problem. The Crocs don’t have a single Jibbitz charm. So she decides to take a charm off her own Crocs and put it on the shoes of her mysterious neighbor. That's the start to Charmed to Meet You , a scripted microdrama that launched in February on the ReelShort app. Apparently inspired by a true story involving a Crocs employee, it chronicles a flirty dialogue told across five short-form episodes. So far, it's attracted more than 10 million views. Microdramas—serialized episodes that run less than t"
+    },
+    {
+      "id": "6f155b7fd4",
+      "title": "J.Crew’s new campaign is an adventurous romp straight out of its ’90s catalogs",
+      "summary_original": "Grab your jelly sandals, one-piece, and striped swim trunks: It’s time to hit the beach at Camp Crew, the setting of J.Crew’s summer campaign that’s selling sweet summer romance (and bikinis) to the masses. \"Camp Crew\" debuted on June 2 in a series of Instagram posts and a 40-second video on the brand’s website. The ad campaign combines new pieces that feature Camp Crew branding , like a red-and-white ringer tee and cream baseball cap, with items from J.Crew’s general summer collection, like a lightweight version of the brand’s iconic roll-neck sweater and plenty of beachy apparel. The entire ",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/04-91552683-j-crew-summer-collection.jpg",
+      "url": "https://www.fastcompany.com/91552683/j-crew-summer-camp-campaign?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-04T10:00:00",
+      "title_de": "J.Crew’s new campaign is an adventurous romp straight out of its ’90s catalogs",
+      "summary_de": "Grab your jelly sandals, one-piece, and striped swim trunks: It’s time to hit the beach at Camp Crew, the setting of J.Crew’s summer campaign that’s selling sweet summer romance (and bikinis) to the masses. \"Camp Crew\" debuted on June 2 in a series of Instagram posts and a 40-second video on the brand’s website. The ad campaign combines new pieces that feature Camp Crew branding , like a red-and-white ringer tee and cream baseball cap, with items from J.Crew’s general summer collection, like a lightweight version of the brand’s iconic roll-neck sweater and plenty of beachy apparel. The entire "
+    },
+    {
+      "id": "c5f2504742",
+      "title": "Still at the cottage? Don’t worry, the ‘Heated Rivalry’ fleece is finally for sale",
+      "summary_original": "Earlier this year, Jeremy Watt was on a call with Jacob Tierney and Brendan Brady, executive producers of Crave’s Heated Rivalry . For Watt, cofounder of the Toronto-based lifestyle and apparel brand Province of Canada , it was the culmination of a crazy run of events that occurred after his company found itself sucked into the viral vortex of social media chatter around the hit show. In episode 2, one of the main characters, Shane Hollander (played by Hudson Williams), wore a Team Canada fleece jacket, seen just for a few moments on-screen. But it was enough to make fans start clamoring for o",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-2-91552651-heated-rivalry-fleece.jpg",
+      "url": "https://www.fastcompany.com/91552651/heated-rivalry-fleece-finally-for-sale?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-03T16:05:00",
+      "title_de": "Still at the cottage? Don’t worry, the ‘Heated Rivalry’ fleece is finally for sale",
+      "summary_de": "Earlier this year, Jeremy Watt was on a call with Jacob Tierney and Brendan Brady, executive producers of Crave’s Heated Rivalry . For Watt, cofounder of the Toronto-based lifestyle and apparel brand Province of Canada , it was the culmination of a crazy run of events that occurred after his company found itself sucked into the viral vortex of social media chatter around the hit show. In episode 2, one of the main characters, Shane Hollander (played by Hudson Williams), wore a Team Canada fleece jacket, seen just for a few moments on-screen. But it was enough to make fans start clamoring for o"
+    },
+    {
+      "id": "2db8527977",
+      "title": "AI-created document fatigue: how I designed my way out of it",
+      "summary_original": "AI promised us a leisure revolution but delivered us more documents to consume. I designed a voice-first app to move my work away from the desk and into the spaces that suit me. Using ARC (Audio Review Companion), to provide document feedback away from the desk. Image generated by AI. A false promise Generative AI will change the way we live and work, forever. We will have more time to do fun, deep, meaningful work. We won’t need to write those tedious emails and Slack messages, because AI will instantly generate a draft or better still your personal agent will proactively do it on your behalf",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*cnlRh44rvr3QxFiMOPs0Nw.jpeg",
+      "url": "https://uxdesign.cc/ai-created-document-fatigue-how-i-designed-my-way-out-of-it-1fcd4a565669?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Tue, 02 Jun 2026 21:53:50 GMT",
+      "title_de": "AI-created document fatigue: how I designed my way out of it",
+      "summary_de": "AI promised us a leisure revolution but delivered us more documents to consume. I designed a voice-first app to move my work away from the desk and into the spaces that suit me. Using ARC (Audio Review Companion), to provide document feedback away from the desk. Image generated by AI. A false promise Generative AI will change the way we live and work, forever. We will have more time to do fun, deep, meaningful work. We won’t need to write those tedious emails and Slack messages, because AI will instantly generate a draft or better still your personal agent will proactively do it on your behalf"
+    },
+    {
+      "id": "e927ef8b94",
+      "title": "The most important part of building your taste is to hand it off",
+      "summary_original": "What having taste trapped in your head costs you and your team Continue reading on UX Collective »",
+      "image": "https://cdn-images-1.medium.com/max/2600/1*UMwk7Jyj27Ubrm57TW8DYA.jpeg",
+      "url": "https://uxdesign.cc/the-most-important-part-of-building-your-taste-is-to-hand-it-off-be91aeac65d9?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Tue, 02 Jun 2026 11:08:16 GMT",
+      "title_de": "The most important part of building your taste is to hand it off",
+      "summary_de": "What having taste trapped in your head costs you and your team Continue reading on UX Collective »"
+    },
+    {
+      "id": "22a3c83b53",
+      "title": "Default Bias: Who chose your settings?",
+      "summary_original": "People pull toward pre-selected options rather than actively choosing alternatives. When a choice arrives with one option already set, most people leave it in place, regardless of whether it reflects their actual preference. The friction of changing something, combined with the implicit signal that the pre-set option is normal or recommended, produces consistent gravity toward the status quo. The mechanism runs through several channels at once. Loss aversion makes changing a default feel like risking something already owned. Implied endorsement suggests the default is a reasonable choice, so s",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*Xq9IpyVqa3w7-wROb-zA8Q.jpeg",
+      "url": "https://uxdesign.cc/default-bias-who-chose-your-settings-d2acde25551b?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Tue, 02 Jun 2026 11:07:25 GMT",
+      "title_de": "Default Bias: Who chose your settings?",
+      "summary_de": "People pull toward pre-selected options rather than actively choosing alternatives. When a choice arrives with one option already set, most people leave it in place, regardless of whether it reflects their actual preference. The friction of changing something, combined with the implicit signal that the pre-set option is normal or recommended, produces consistent gravity toward the status quo. The mechanism runs through several channels at once. Loss aversion makes changing a default feel like risking something already owned. Implied endorsement suggests the default is a reasonable choice, so s"
+    },
+    {
+      "id": "d47b19f8dd",
+      "title": "AI meets Sturgeon’s Law",
+      "summary_original": "Why does more content not mean more quality Continue reading on UX Collective »",
+      "image": "https://cdn-images-1.medium.com/max/2388/1*UXZuLeKNNH4XliAHVkKz7A.png",
+      "url": "https://uxdesign.cc/ai-meets-sturgeons-law-21d17488fc48?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Mon, 01 Jun 2026 22:53:56 GMT",
+      "title_de": "AI meets Sturgeon’s Law",
+      "summary_de": "Why does more content not mean more quality Continue reading on UX Collective »"
+    }
+  ]
 }
