@@ -3,85 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZDiFaldo – Design Nachrichten</title>
+  <title>ZDiFaldo // Creative Tech & Design Hub</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .line-clamp-3 {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
+    * { font-family: 'Inter', sans-serif; }
+    .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen">
+<body class="bg-white text-zinc-900 min-h-screen">
 <div id="root"></div>
 
 <script type="text/babel">
 const { useState, useEffect, useMemo } = React;
 
-const CATEGORY_COLORS = {
-  ui:       { bg: "bg-blue-950",   text: "text-blue-300",   border: "border-blue-800",   dot: "bg-blue-400"   },
-  tools:    { bg: "bg-green-950",  text: "text-green-300",  border: "border-green-800",  dot: "bg-green-400"  },
-  ai:       { bg: "bg-violet-950", text: "text-violet-300", border: "border-violet-800", dot: "bg-violet-400" },
-  branding: { bg: "bg-orange-950", text: "text-orange-300", border: "border-orange-800", dot: "bg-orange-400" },
-  motion:   { bg: "bg-pink-950",   text: "text-pink-300",   border: "border-pink-800",   dot: "bg-pink-400"   },
-  general:  { bg: "bg-zinc-900",   text: "text-zinc-400",   border: "border-zinc-700",   dot: "bg-zinc-400"   },
+const FILTER_LABELS = {
+  all:      "Tümü (Alle)",
+  motion:   "Motion & Plugins",
+  branding: "Branding & Typo",
+  ai:       "KI & Bildrechte",
+  tools:    "Software & Tools",
+  ui:       "UI/UX",
+  general:  "Design",
 };
 
-function CategoryBadge({ category, label }) {
-  const c = CATEGORY_COLORS[category] || CATEGORY_COLORS.general;
-  return (
-    <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${c.bg} ${c.text} ${c.border}`}>
-      <span className={`w-1.5 h-1.5 rounded-full ${c.dot}`}></span>
-      {label}
-    </span>
-  );
+const FALLBACK_IMAGES = {
+  ui:       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
+  tools:    "https://images.unsplash.com/photo-1618788372246-79faff0c3742?w=600&q=80",
+  ai:       "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
+  branding: "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?w=600&q=80",
+  motion:   "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80",
+  general:  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+};
+
+function formatDate(raw) {
+  if (!raw) return "Heute";
+  try {
+    const d = new Date(raw);
+    const diff = Math.floor((new Date() - d) / 86400000);
+    if (diff === 0) return "Heute";
+    if (diff === 1) return "Gestern";
+    if (diff < 7) return `vor ${diff} Tagen`;
+    return d.toLocaleDateString("de-DE", { day: "2-digit", month: "short", year: "numeric" });
+  } catch { return "Heute"; }
 }
 
 function NewsCard({ item, labels }) {
-  const label = labels[item.category] || item.category;
-  const pubDate = item.published_raw
-    ? new Date(item.published_raw).toLocaleDateString("de-DE", { day: "2-digit", month: "short", year: "numeric" })
-    : "";
+  const label = labels[item.category] || item.category.toUpperCase();
+  const imgSrc = item.image || FALLBACK_IMAGES[item.category] || FALLBACK_IMAGES.general;
+  const date = formatDate(item.published_raw);
 
   return (
-    <article className="flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:border-zinc-600 transition-colors duration-200 group">
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <CategoryBadge category={item.category} label={label} />
-        {pubDate && <span className="text-xs text-zinc-600 shrink-0 mt-0.5">{pubDate}</span>}
-      </div>
+    <article className="flex gap-6 py-10 border-b border-zinc-200 last:border-0">
+      {/* Görsel */}
+      <a
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="shrink-0 w-52 h-36 rounded-xl overflow-hidden bg-zinc-100 block"
+      >
+        <img
+          src={imgSrc}
+          alt={item.title_de || item.title}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          onError={e => { e.target.src = FALLBACK_IMAGES.general; }}
+        />
+      </a>
 
-      <h2 className="text-sm font-semibold text-zinc-100 leading-snug mb-2 group-hover:text-white transition-colors">
-        {item.title_de || item.title}
-      </h2>
-
-      {(item.summary_de || item.summary_original) && (
-        <p className="text-xs text-zinc-400 leading-relaxed line-clamp-3 mb-4 flex-1">
-          {item.summary_de || item.summary_original}
-        </p>
-      )}
-
-      <div className="flex items-center justify-between mt-auto pt-3 border-t border-zinc-800">
-        <span className="text-xs text-zinc-600">{item.source}</span>
-        {item.url && (
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-zinc-400 hover:text-zinc-100 flex items-center gap-1 transition-colors"
-          >
-            Lesen
-            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+      {/* İçerik */}
+      <div className="flex flex-col justify-between flex-1 min-w-0">
+        <div>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
+            <h2 className="text-2xl font-black leading-tight mb-3 hover:text-zinc-500 transition-colors line-clamp-2">
+              {item.title_de || item.title}
+            </h2>
           </a>
+
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
+            <span className="bg-zinc-900 text-white text-xs font-bold px-2.5 py-1 rounded">
+              {label.toUpperCase()}
+            </span>
+            <span className="text-zinc-300">•</span>
+            <span className="text-sm text-zinc-500">{item.source}</span>
+            <span className="text-zinc-300">•</span>
+            <span className="text-sm text-zinc-500">{date}</span>
+          </div>
+
+          {(item.summary_de || item.summary_original) && (
+            <p className="text-sm text-zinc-600 leading-relaxed line-clamp-3">
+              {item.summary_de || item.summary_original}
+            </p>
+          )}
+        </div>
+
+        {item.url && (
+          <div className="mt-4">
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border-2 border-zinc-900 text-zinc-900 text-sm font-semibold px-5 py-2 rounded-lg hover:bg-zinc-900 hover:text-white transition-colors"
+            >
+              Weiterlesen
+            </a>
+          </div>
         )}
       </div>
     </article>
@@ -91,28 +121,21 @@ function NewsCard({ item, labels }) {
 function App() {
   const [data, setData]       = useState(null);
   const [error, setError]     = useState(null);
-  const [activecat, setActivecat] = useState("all");
+  const [activecat, setAct]   = useState("all");
   const [search, setSearch]   = useState("");
 
   useEffect(() => {
     fetch("./news_data.json")
-      .then(r => { if (!r.ok) throw new Error("news_data.json bulunamadı"); return r.json(); })
+      .then(r => { if (!r.ok) throw new Error("news_data.json nicht gefunden"); return r.json(); })
       .then(setData)
       .catch(e => setError(e.message));
   }, []);
 
-  const categories = useMemo(() => {
-    if (!data) return [];
-    const seen = new Set();
-    data.items.forEach(i => seen.add(i.category));
-    return Array.from(seen);
-  }, [data]);
-
   const filtered = useMemo(() => {
     if (!data) return [];
     return data.items.filter(item => {
-      const matchCat  = activecat === "all" || item.category === activecat;
-      const q         = search.toLowerCase();
+      const matchCat = activecat === "all" || item.category === activecat;
+      const q = search.toLowerCase();
       const matchSearch = !q ||
         (item.title_de || item.title || "").toLowerCase().includes(q) ||
         (item.summary_de || item.summary_original || "").toLowerCase().includes(q) ||
@@ -122,89 +145,73 @@ function App() {
   }, [data, activecat, search]);
 
   const updatedAt = data?.updated_at
-    ? new Date(data.updated_at).toLocaleString("de-DE", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })
-    : "";
+    ? new Date(data.updated_at).toLocaleString("de-DE", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })
+    : null;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div className="max-w-4xl mx-auto px-6 py-12">
+
       {/* Header */}
-      <header className="mb-8">
-        <div className="flex items-end justify-between flex-wrap gap-4 mb-6">
+      <header className="mb-10">
+        <div className="flex items-start justify-between mb-2 flex-wrap gap-4">
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight text-white">ZDiFaldo</h1>
-            <p className="text-sm text-zinc-500 mt-1">Design & Technologie Nachrichten auf Deutsch</p>
+            <h1 className="text-5xl font-black tracking-tight">ZDiFaldo</h1>
+            <p className="text-zinc-500 text-sm mt-1">
+              Spotlight: Motion, Branding, KI-Recht & Software-Tools
+            </p>
           </div>
-          {updatedAt && (
-            <span className="text-xs text-zinc-600 border border-zinc-800 rounded-lg px-3 py-1.5">
-              Aktualisiert: {updatedAt}
-            </span>
-          )}
+          <span className="border border-zinc-300 rounded-full px-4 py-1.5 text-sm text-zinc-500 self-start mt-2">
+            Live-Feed für dein Design-Team
+          </span>
         </div>
 
         {/* Arama */}
-        <div className="relative mb-4">
-          <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
-          </svg>
+        <div className="relative my-5">
           <input
             type="text"
             placeholder="Nachrichten durchsuchen..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="w-full bg-zinc-900 border border-zinc-800 rounded-xl pl-9 pr-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors"
+            className="w-full border border-zinc-200 rounded-xl pl-4 pr-4 py-2.5 text-sm focus:outline-none focus:border-zinc-400 transition-colors bg-zinc-50"
           />
         </div>
 
         {/* Kategori filtreleri */}
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setActivecat("all")}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-              activecat === "all"
-                ? "bg-zinc-100 text-zinc-900 border-zinc-100"
-                : "bg-transparent text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-zinc-200"
-            }`}
-          >
-            Alle
-          </button>
-          {categories.map(cat => {
-            const label = data?.category_labels?.[cat] || cat;
-            const c = CATEGORY_COLORS[cat] || CATEGORY_COLORS.general;
-            return (
-              <button
-                key={cat}
-                onClick={() => setActivecat(cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-                  activecat === cat
-                    ? `${c.bg} ${c.text} ${c.border}`
-                    : "bg-transparent text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-zinc-200"
-                }`}
-              >
-                {label}
-              </button>
-            );
-          })}
+        <div className="flex flex-wrap gap-2 pb-6 border-b border-zinc-200">
+          {Object.entries(FILTER_LABELS).map(([cat, label]) => (
+            <button
+              key={cat}
+              onClick={() => setAct(cat)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
+                activecat === cat
+                  ? "bg-zinc-900 text-white border-zinc-900"
+                  : "bg-white text-zinc-600 border-zinc-300 hover:border-zinc-500 hover:text-zinc-900"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </header>
 
-      {/* Durum mesajları */}
+      {/* Hata */}
       {error && (
-        <div className="text-center py-20 text-zinc-500">
-          <div className="text-4xl mb-3">⚠️</div>
+        <div className="text-center py-24 text-zinc-400">
+          <p className="text-3xl mb-3">⚠️</p>
           <p className="text-sm">{error}</p>
-          <p className="text-xs text-zinc-700 mt-2">Stelle sicher, dass news_data.json vorhanden ist.</p>
         </div>
       )}
 
+      {/* Yükleniyor */}
       {!data && !error && (
-        <div className="text-center py-20 text-zinc-600 text-sm animate-pulse">
+        <div className="text-center py-24 text-zinc-400 text-sm animate-pulse">
           Nachrichten werden geladen...
         </div>
       )}
 
-      {/* Haber grid */}
+      {/* Haber listesi */}
       {filtered.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
           {filtered.map(item => (
             <NewsCard key={item.id} item={item} labels={data?.category_labels || {}} />
           ))}
@@ -212,18 +219,17 @@ function App() {
       )}
 
       {data && filtered.length === 0 && (
-        <div className="text-center py-20 text-zinc-600 text-sm">
+        <div className="text-center py-24 text-zinc-400 text-sm">
           Keine Ergebnisse gefunden.
         </div>
       )}
 
       {/* Footer */}
-      {data && (
-        <footer className="mt-12 pt-6 border-t border-zinc-900 flex items-center justify-between flex-wrap gap-2 text-xs text-zinc-700">
-          <span>{data.item_count} Artikel aus {data.source_count} Quellen</span>
-          <span>ZDiFaldo – täglich aktualisiert via GitHub Actions</span>
-        </footer>
-      )}
+      <footer className="mt-12 pt-6 border-t border-zinc-200 flex items-center justify-between flex-wrap gap-2 text-xs text-zinc-400">
+        <span>{data?.item_count || 0} Artikel · {data?.source_count || 6} Quellen</span>
+        {updatedAt && <span>Zuletzt aktualisiert: {updatedAt}</span>}
+      </footer>
+
     </div>
   );
 }
