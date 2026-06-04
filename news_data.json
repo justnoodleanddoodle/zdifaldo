@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-04T11:09:50Z",
+  "updated_at": "2026-06-04T11:14:06Z",
   "source_count": 6,
   "item_count": 16,
   "category_labels": {
     "ui": "UI/UX",
-    "tools": "Design-Tools",
-    "ai": "KI & Design",
-    "branding": "Branding",
-    "motion": "Motion",
+    "tools": "Software & Tools",
+    "ai": "KI & Bildrechte",
+    "branding": "Branding & Typo",
+    "motion": "Motion & Plugins",
     "general": "Design"
   },
   "items": [
