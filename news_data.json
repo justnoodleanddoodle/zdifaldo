@@ -1,0 +1,14 @@
+{
+  "updated_at": "",
+  "source_count": 6,
+  "item_count": 0,
+  "category_labels": {
+    "ui":       "UI/UX",
+    "tools":    "Design-Tools",
+    "ai":       "KI & Design",
+    "branding": "Branding",
+    "motion":   "Motion",
+    "general":  "Design"
+  },
+  "items": []
+}
