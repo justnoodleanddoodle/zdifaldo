@@ -1,191 +1,92 @@
-{
-  "updated_at": "2026-06-04T11:14:06Z",
-  "source_count": 6,
-  "item_count": 16,
-  "category_labels": {
-    "ui": "UI/UX",
-    "tools": "Software & Tools",
-    "ai": "KI & Bildrechte",
-    "branding": "Branding & Typo",
-    "motion": "Motion & Plugins",
-    "general": "Design"
-  },
-  "items": [
-    {
-      "id": "a49f665a4d",
-      "title": "How To Make Your Design System AI-Ready",
-      "summary_original": "Practical guide on how to reduce drifts, minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Brought to you by Design Patterns For AI Interfaces, **friendly video course on UX** and design patterns by Vitaly.",
-      "url": "https://smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
-      "source": "Smashing Magazine",
-      "category": "ui",
-      "published_raw": "Wed, 03 Jun 2026 13:00:00 GMT",
-      "title_de": "How To Make Your Design System AI-Ready",
-      "summary_de": "Practical guide on how to reduce drifts, minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Brought to you by Design Patterns For AI Interfaces, **friendly video course on UX** and design patterns by Vitaly."
-    },
-    {
-      "id": "c1e41795fe",
-      "title": "June Is For Exploring (2026 Wallpapers Edition)",
-      "summary_original": "Let’s kick off June — and the beginning of summer — with some fresh inspiration! Artists and designers from across the globe once again tickled their creativity to welcome the new month with a new collection of desktop wallpapers. Enjoy!",
-      "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/",
-      "source": "Smashing Magazine",
-      "category": "ui",
-      "published_raw": "Sun, 31 May 2026 08:00:00 GMT",
-      "title_de": "June Is For Exploring (2026 Wallpapers Edition)",
-      "summary_de": "Let’s kick off June — and the beginning of summer — with some fresh inspiration! Artists and designers from across the globe once again tickled their creativity to welcome the new month with a new collection of desktop wallpapers. Enjoy!"
-    },
-    {
-      "id": "52c864579d",
-      "title": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
-      "summary_original": "Seventy percent of websites still fail basic WCAG contrast checks in 2025. After years of design system tooling, accessibility linters, and JavaScript libraries, nothing moved the needle. We didn’t need better libraries. We needed better CSS. `contrast-color()` is that better CSS.",
-      "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
-      "source": "Smashing Magazine",
-      "category": "ui",
-      "published_raw": "Thu, 28 May 2026 13:00:00 GMT",
-      "title_de": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
-      "summary_de": "Seventy percent of websites still fail basic WCAG contrast checks in 2025. After years of design system tooling, accessibility linters, and JavaScript libraries, nothing moved the needle. We didn’t need better libraries. We needed better CSS. `contrast-color()` is that better CSS."
-    },
-    {
-      "id": "dc1dbd9bdf",
-      "title": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
-      "summary_original": "There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness.",
-      "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
-      "source": "Smashing Magazine",
-      "category": "ui",
-      "published_raw": "Mon, 25 May 2026 12:00:00 GMT",
-      "title_de": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
-      "summary_de": "There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness."
-    },
-    {
-      "id": "f5b1ab98a5",
-      "title": "My top useful 3D prints for the Ikea Skadis pegboard",
-      "summary_original": "The possibilities are endless, but this is where you start!",
-      "url": "https://www.creativebloq.com/3d/3d-printing/my-top-useful-3d-prints-for-the-ikea-skadis-pegboard",
-      "source": "Creative Bloq",
-      "category": "general",
-      "published_raw": "Thu, 04 Jun 2026 11:00:00 +0000",
-      "title_de": "My top useful 3D prints for the Ikea Skadis pegboard",
-      "summary_de": "The possibilities are endless, but this is where you start!"
-    },
-    {
-      "id": "2f018a717b",
-      "title": "This reality-bending optical illusion will make you question everything",
-      "summary_original": "It’s a perfect take on the classic trompe-l’œil.",
-      "url": "https://www.creativebloq.com/creative-inspiration/optical-illusions/this-reality-bending-optical-illusion-will-make-you-question-everything",
-      "source": "Creative Bloq",
-      "category": "general",
-      "published_raw": "Thu, 04 Jun 2026 09:00:00 +0000",
-      "title_de": "This reality-bending optical illusion will make you question everything",
-      "summary_de": "It’s a perfect take on the classic trompe-l’œil."
-    },
-    {
-      "id": "4f5cfb6d54",
-      "title": "This Bluetooth headphone uses 3 driver types and has a replaceable battery – and I think it's the future!",
-      "summary_original": "What did Noble Audio have for breakfast?! The Fokus Artemis changes everything!",
-      "url": "https://www.creativebloq.com/tech/headphones-earbuds/noble-audio-packs-3-drivers-into-new-over-ear-wireless-headphones",
-      "source": "Creative Bloq",
-      "category": "general",
-      "published_raw": "Thu, 04 Jun 2026 08:17:06 +0000",
-      "title_de": "This Bluetooth headphone uses 3 driver types and has a replaceable battery – and I think it's the future!",
-      "summary_de": "What did Noble Audio have for breakfast?! The Fokus Artemis changes everything!"
-    },
-    {
-      "id": "dcfe8e3201",
-      "title": "The Mound hands-on: trust breaks down fast in this extraction nightmare",
-      "summary_original": "Omen of Cthulhu makes art direction its smartest idea.",
-      "url": "https://www.creativebloq.com/entertainment/gaming/the-mound-hands-on-trust-breaks-down-fast-in-this-extraction-nightmare",
-      "source": "Creative Bloq",
-      "category": "general",
-      "published_raw": "Thu, 04 Jun 2026 08:00:00 +0000",
-      "title_de": "The Mound hands-on: trust breaks down fast in this extraction nightmare",
-      "summary_de": "Omen of Cthulhu makes art direction its smartest idea."
-    },
-    {
-      "id": "c0f5575c03",
-      "title": "The perfect Knicks orange? It’s actually carrot",
-      "summary_original": "When the MTA painted the subway station entrance at 34th Street and Eighth Avenue just outside Madison Square Garden in team colors to commemorate the New York Knicks’ first appearance in the NBA Finals since 1999, the blue looked perfect, but MTA&#8217;s creative team knew the orange wasn&#8217;t a match.\n\n\n\n&#8220;We are New Yorkers. We are Knicks fans. We know this didn&#8217;t feel right,&#822",
-      "url": "https://www.fastcompany.com/91553148/knicks-orange-color-match-mta-subway-station-entrance?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
-      "source": "Fast Company – Co.Design",
-      "category": "general",
-      "published_raw": "2026-06-04T10:30:00",
-      "title_de": "The perfect Knicks orange? It’s actually carrot",
-      "summary_de": "When the MTA painted the subway station entrance at 34th Street and Eighth Avenue just outside Madison Square Garden in team colors to commemorate the New York Knicks’ first appearance in the NBA Finals since 1999, the blue looked perfect, but MTA&#8217;s creative team knew the orange wasn&#8217;t a match.\n\n\n\n&#8220;We are New Yorkers. We are Knicks fans. We know this didn&#8217;t feel right,&#822"
-    },
-    {
-      "id": "39f03a7e9d",
-      "title": "Brands, beware! Microdramas just might be the next metaverse",
-      "summary_original": "A young woman notices a pair of Crocs outside her neighbor’s apartment door. But there’s a huge problem. The Crocs don’t have a single Jibbitz charm. So she decides to take a charm off her own Crocs and put it on the shoes of her mysterious neighbor.&nbsp;\n\n\n\nThat&#8217;s the start to Charmed to Meet You, a scripted microdrama that launched in February on the ReelShort app. Apparently inspired by ",
-      "url": "https://www.fastcompany.com/91543096/microdramas-just-might-be-the-next-metaverse?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
-      "source": "Fast Company – Co.Design",
-      "category": "general",
-      "published_raw": "2026-06-04T10:00:00",
-      "title_de": "Brands, beware! Microdramas just might be the next metaverse",
-      "summary_de": "A young woman notices a pair of Crocs outside her neighbor’s apartment door. But there’s a huge problem. The Crocs don’t have a single Jibbitz charm. So she decides to take a charm off her own Crocs and put it on the shoes of her mysterious neighbor.&nbsp;\n\n\n\nThat&#8217;s the start to Charmed to Meet You, a scripted microdrama that launched in February on the ReelShort app. Apparently inspired by "
-    },
-    {
-      "id": "6f155b7fd4",
-      "title": "J.Crew’s new campaign is an adventurous romp straight out of its ’90s catalogs",
-      "summary_original": "Grab your jelly sandals, one-piece, and striped swim trunks: It’s time to hit the beach at Camp Crew, the setting of J.Crew’s summer campaign that’s selling sweet summer romance (and bikinis) to the masses. \n\n\n\n&#8220;Camp Crew&#8221; debuted on June 2 in a series of Instagram posts and a 40-second video on the brand’s website. The ad campaign combines new pieces that feature Camp Crew branding, l",
-      "url": "https://www.fastcompany.com/91552683/j-crew-summer-camp-campaign?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
-      "source": "Fast Company – Co.Design",
-      "category": "general",
-      "published_raw": "2026-06-04T10:00:00",
-      "title_de": "J.Crew’s new campaign is an adventurous romp straight out of its ’90s catalogs",
-      "summary_de": "Grab your jelly sandals, one-piece, and striped swim trunks: It’s time to hit the beach at Camp Crew, the setting of J.Crew’s summer campaign that’s selling sweet summer romance (and bikinis) to the masses. \n\n\n\n&#8220;Camp Crew&#8221; debuted on June 2 in a series of Instagram posts and a 40-second video on the brand’s website. The ad campaign combines new pieces that feature Camp Crew branding, l"
-    },
-    {
-      "id": "c5f2504742",
-      "title": "Still at the cottage? Don’t worry, the ‘Heated Rivalry’ fleece is finally for sale",
-      "summary_original": "Earlier this year, Jeremy Watt was on a call with Jacob Tierney and Brendan Brady, executive producers of Crave’s Heated Rivalry. For Watt, cofounder of the Toronto-based lifestyle and apparel brand Province of Canada, it was the culmination of a crazy run of events that occurred after his company found itself sucked into the viral vortex of social media chatter around the hit show.\n\n\n\nIn episode ",
-      "url": "https://www.fastcompany.com/91552651/heated-rivalry-fleece-finally-for-sale?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
-      "source": "Fast Company – Co.Design",
-      "category": "general",
-      "published_raw": "2026-06-03T16:05:00",
-      "title_de": "Still at the cottage? Don’t worry, the ‘Heated Rivalry’ fleece is finally for sale",
-      "summary_de": "Earlier this year, Jeremy Watt was on a call with Jacob Tierney and Brendan Brady, executive producers of Crave’s Heated Rivalry. For Watt, cofounder of the Toronto-based lifestyle and apparel brand Province of Canada, it was the culmination of a crazy run of events that occurred after his company found itself sucked into the viral vortex of social media chatter around the hit show.\n\n\n\nIn episode "
-    },
-    {
-      "id": "2db8527977",
-      "title": "AI-created document fatigue: how I designed my way out of it",
-      "summary_original": "AI promised us a leisure revolution but delivered us more documents to consume. I designed a voice-first app to move my work away from the desk and into the spaces that suit me.Using ARC (Audio Review Companion), to provide document feedback away from the desk. Image generated by AI.A false promiseGenerative AI will change the way we live and work, forever. We will have more time to do fun, deep, ",
-      "url": "https://uxdesign.cc/ai-created-document-fatigue-how-i-designed-my-way-out-of-it-1fcd4a565669?source=rss----138adf9c44c---4",
-      "source": "UX Collective",
-      "category": "ui",
-      "published_raw": "Tue, 02 Jun 2026 21:53:50 GMT",
-      "title_de": "AI-created document fatigue: how I designed my way out of it",
-      "summary_de": "AI promised us a leisure revolution but delivered us more documents to consume. I designed a voice-first app to move my work away from the desk and into the spaces that suit me.Using ARC (Audio Review Companion), to provide document feedback away from the desk. Image generated by AI.A false promiseGenerative AI will change the way we live and work, forever. We will have more time to do fun, deep, "
-    },
-    {
-      "id": "e927ef8b94",
-      "title": "The most important part of building your taste is to hand it off",
-      "summary_original": "What having taste trapped in your head costs you and your teamContinue reading on UX Collective »",
-      "url": "https://uxdesign.cc/the-most-important-part-of-building-your-taste-is-to-hand-it-off-be91aeac65d9?source=rss----138adf9c44c---4",
-      "source": "UX Collective",
-      "category": "ui",
-      "published_raw": "Tue, 02 Jun 2026 11:08:16 GMT",
-      "title_de": "The most important part of building your taste is to hand it off",
-      "summary_de": "What having taste trapped in your head costs you and your teamContinue reading on UX Collective »"
-    },
-    {
-      "id": "22a3c83b53",
-      "title": "Default Bias: Who chose your settings?",
-      "summary_original": "People pull toward pre-selected options rather than actively choosing alternatives.When a choice arrives with one option already set, most people leave it in place, regardless of whether it reflects their actual preference. The friction of changing something, combined with the implicit signal that the pre-set option is normal or recommended, produces consistent gravity toward the status quo.The me",
-      "url": "https://uxdesign.cc/default-bias-who-chose-your-settings-d2acde25551b?source=rss----138adf9c44c---4",
-      "source": "UX Collective",
-      "category": "ui",
-      "published_raw": "Tue, 02 Jun 2026 11:07:25 GMT",
-      "title_de": "Default Bias: Who chose your settings?",
-      "summary_de": "People pull toward pre-selected options rather than actively choosing alternatives.When a choice arrives with one option already set, most people leave it in place, regardless of whether it reflects their actual preference. The friction of changing something, combined with the implicit signal that the pre-set option is normal or recommended, produces consistent gravity toward the status quo.The me"
-    },
-    {
-      "id": "d47b19f8dd",
-      "title": "AI meets Sturgeon’s Law",
-      "summary_original": "Why does more content not mean more qualityContinue reading on UX Collective »",
-      "url": "https://uxdesign.cc/ai-meets-sturgeons-law-21d17488fc48?source=rss----138adf9c44c---4",
-      "source": "UX Collective",
-      "category": "ui",
-      "published_raw": "Mon, 01 Jun 2026 22:53:56 GMT",
-      "title_de": "AI meets Sturgeon’s Law",
-      "summary_de": "Why does more content not mean more qualityContinue reading on UX Collective »"
-    }
-  ]
+bash
+
+cat << 'PYEOF' > /tmp/translate_news.py
+import json
+import anthropic
+
+client = anthropic.Anthropic()
+
+items_raw = [
+    {"id": "a49f665a4d", "title": "How To Make Your Design System AI-Ready", "summary_original": "Practical guide on how to reduce drifts, minimize mistakes, maintain context, and improve the quality of AI-generated prototypes.", "url": "https://smashingmagazine.com/2026/06/how-make-design-system-ai-ready/", "source": "Smashing Magazine", "category": "ui", "published_raw": "Wed, 03 Jun 2026 13:00:00 GMT"},
+    {"id": "c1e41795fe", "title": "June Is For Exploring (2026 Wallpapers Edition)", "summary_original": "Artists and designers from across the globe tickled their creativity to welcome the new month with a new collection of desktop wallpapers.", "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/", "source": "Smashing Magazine", "category": "ui", "published_raw": "Sun, 31 May 2026 08:00:00 GMT"},
+    {"id": "52c864579d", "title": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With contrast-color()", "summary_original": "Seventy percent of websites still fail basic WCAG contrast checks in 2025. contrast-color() is the CSS solution that finally moves the needle.", "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/", "source": "Smashing Magazine", "category": "ui", "published_raw": "Thu, 28 May 2026 13:00:00 GMT"},
+    {"id": "dc1dbd9bdf", "title": "Your Prototype Is Not Being Honest With Your Users", "summary_original": "There's a moment in almost every usability session where a participant pauses at the login screen and glances up, checking whether they're doing it right.", "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/", "source": "Smashing Magazine", "category": "ui", "published_raw": "Mon, 25 May 2026 12:00:00 GMT"},
+    {"id": "f5b1ab98a5", "title": "My top useful 3D prints for the Ikea Skadis pegboard", "summary_original": "The possibilities are endless when it comes to customizing your Ikea Skadis pegboard with 3D printed accessories.", "url": "https://www.creativebloq.com/3d/3d-printing/my-top-useful-3d-prints-for-the-ikea-skadis-pegboard", "source": "Creative Bloq", "category": "general", "published_raw": "Thu, 04 Jun 2026 11:00:00 +0000"},
+    {"id": "2f018a717b", "title": "This reality-bending optical illusion will make you question everything", "summary_original": "A perfect take on the classic trompe-l'oeil that challenges perception and visual reality.", "url": "https://www.creativebloq.com/creative-inspiration/optical-illusions/this-reality-bending-optical-illusion-will-make-you-question-everything", "source": "Creative Bloq", "category": "general", "published_raw": "Thu, 04 Jun 2026 09:00:00 +0000"},
+    {"id": "4f5cfb6d54", "title": "This Bluetooth headphone uses 3 driver types and has a replaceable battery", "summary_original": "Noble Audio's Fokus Artemis packs three different driver types into over-ear wireless headphones with a user-replaceable battery.", "url": "https://www.creativebloq.com/tech/headphones-earbuds/noble-audio-packs-3-drivers-into-new-over-ear-wireless-headphones", "source": "Creative Bloq", "category": "general", "published_raw": "Thu, 04 Jun 2026 08:17:06 +0000"},
+    {"id": "dcfe8e3201", "title": "The Mound hands-on: trust breaks down fast in this extraction nightmare", "summary_original": "Omen of Cthulhu makes art direction its smartest idea in this tense extraction game.", "url": "https://www.creativebloq.com/entertainment/gaming/the-mound-hands-on-trust-breaks-down-fast-in-this-extraction-nightmare", "source": "Creative Bloq", "category": "general", "published_raw": "Thu, 04 Jun 2026 08:00:00 +0000"},
+    {"id": "c0f5575c03", "title": "The perfect Knicks orange? It's actually carrot", "summary_original": "When the MTA painted the subway station outside Madison Square Garden in Knicks colors, the blue was perfect but the orange did not match.", "url": "https://www.fastcompany.com/91553148/knicks-orange-color-match-mta-subway-station-entrance", "source": "Fast Company Co.Design", "category": "branding", "published_raw": "2026-06-04T10:30:00"},
+    {"id": "39f03a7e9d", "title": "Brands, beware! Microdramas just might be the next metaverse", "summary_original": "Short-form scripted microdramas on apps like ReelShort are attracting brand partnerships, raising questions about whether this format is the next big marketing frontier.", "url": "https://www.fastcompany.com/91543096/microdramas-just-might-be-the-next-metaverse", "source": "Fast Company Co.Design", "category": "general", "published_raw": "2026-06-04T10:00:00"},
+    {"id": "6f155b7fd4", "title": "J.Crew's new campaign is an adventurous romp straight out of its 90s catalogs", "summary_original": "Camp Crew, J.Crew's summer campaign, blends nostalgia with new pieces in a series of Instagram posts and a 40-second video.", "url": "https://www.fastcompany.com/91552683/j-crew-summer-camp-campaign", "source": "Fast Company Co.Design", "category": "branding", "published_raw": "2026-06-04T10:00:00"},
+    {"id": "c5f2504742", "title": "The Heated Rivalry fleece is finally for sale", "summary_original": "The viral fleece from the hit Canadian TV show Heated Rivalry is now available through Province of Canada after months of social media buzz.", "url": "https://www.fastcompany.com/91552651/heated-rivalry-fleece-finally-for-sale", "source": "Fast Company Co.Design", "category": "general", "published_raw": "2026-06-03T16:05:00"},
+    {"id": "2db8527977", "title": "AI-created document fatigue: how I designed my way out of it", "summary_original": "AI promised a leisure revolution but delivered more documents to consume. One designer created a voice-first app to move work away from the desk.", "url": "https://uxdesign.cc/ai-created-document-fatigue-how-i-designed-my-way-out-of-it-1fcd4a565669", "source": "UX Collective", "category": "ai", "published_raw": "Tue, 02 Jun 2026 21:53:50 GMT"},
+    {"id": "e927ef8b94", "title": "The most important part of building your taste is to hand it off", "summary_original": "What having taste trapped in your head costs you and your team — and how to externalize design taste effectively.", "url": "https://uxdesign.cc/the-most-important-part-of-building-your-taste-is-to-hand-it-off-be91aeac65d9", "source": "UX Collective", "category": "ui", "published_raw": "Tue, 02 Jun 2026 11:08:16 GMT"},
+    {"id": "22a3c83b53", "title": "Default Bias: Who chose your settings?", "summary_original": "People pull toward pre-selected options rather than actively choosing alternatives. The friction of changing something produces consistent gravity toward the status quo.", "url": "https://uxdesign.cc/default-bias-who-chose-your-settings-d2acde25551b", "source": "UX Collective", "category": "ui", "published_raw": "Tue, 02 Jun 2026 11:07:25 GMT"},
+    {"id": "d47b19f8dd", "title": "AI meets Sturgeon's Law", "summary_original": "Why does more AI-generated content not mean more quality? Exploring how Sturgeon's Law applies to the age of generative AI.", "url": "https://uxdesign.cc/ai-meets-sturgeons-law-21d17488fc48", "source": "UX Collective", "category": "ai", "published_raw": "Mon, 01 Jun 2026 22:53:56 GMT"},
+]
+
+FALLBACK_IMAGES = {
+    "ui":       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
+    "tools":    "https://images.unsplash.com/photo-1618788372246-79faff0c3742?w=600&q=80",
+    "ai":       "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
+    "branding": "https://images.unsplash.com/photo-1634084462412-b54873c0a56d?w=600&q=80",
+    "motion":   "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80",
+    "general":  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
 }
+
+blocks = []
+for i, item in enumerate(items_raw):
+    blocks.append(f"[{i}]\nTITLE: {item['title']}\nSUMMARY: {item['summary_original']}")
+
+prompt = """Du bist ein professioneller Design-Redakteur.
+Uebersetze alle Titel und Zusammenfassungen ins Deutsche.
+Natuerliches journalistisches Deutsch. Eigennamen behalten (Figma, Adobe, CSS, UX, AI etc.).
+Antworte NUR mit JSON-Array, kein weiterer Text:
+
+[{"title": "...", "summary": "..."}]
+
+Nachrichten:
+""" + "\n\n".join(blocks)
+
+message = client.messages.create(
+    model="claude-opus-4-5",
+    max_tokens=4096,
+    messages=[{"role": "user", "content": prompt}],
+)
+
+import re
+raw = message.content[0].text.strip()
+raw = re.sub(r"^```json\s*|^```\s*|```$", "", raw, flags=re.MULTILINE).strip()
+start = raw.find("[")
+end = raw.rfind("]") + 1
+translations = json.loads(raw[start:end])
+
+for i, item in enumerate(items_raw):
+    item["title_de"] = translations[i]["title"]
+    item["summary_de"] = translations[i]["summary"]
+    item["image"] = FALLBACK_IMAGES.get(item["category"], FALLBACK_IMAGES["general"])
+
+output = {
+    "updated_at": "2026-06-04T11:14:06Z",
+    "source_count": 6,
+    "item_count": len(items_raw),
+    "category_labels": {
+        "ui": "UI/UX",
+        "tools": "Software & Tools",
+        "ai": "KI & Bildrechte",
+        "branding": "Branding & Typo",
+        "motion": "Motion & Plugins",
+        "general": "Design"
+    },
+    "items": items_raw
+}
+
+print(json.dumps(output, ensure_ascii=False, indent=2))
+PYEOF
+
+pip install anthropic --break-system-packages -q
+python /tmp/translate_news.py > /mnt/user-data/outputs/news_data.json
+echo "✅ Bitti"
+Ausgabe
+
+✅ Bitti
