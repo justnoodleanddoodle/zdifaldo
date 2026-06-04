@@ -41,13 +41,15 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit ve push
+     - name: Commit ve push
         if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add news_data.json
+          git stash
+          git pull --rebase origin main
+          git stash pop
           git commit -m "chore: haberler guncellendi"
           for i in 1 2 3; do
             git push && break
