@@ -1,0 +1,71 @@
+name: ZDiFaldo Haber Botu
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # Her gün 07:00 UTC (09:00 Almanya)
+  workflow_dispatch:        # Manuel tetikleme butonu
+
+jobs:
+  haber-guncelle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # Push yetkisi
+
+    steps:
+      - name: Repo'yu çek
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # Tam git geçmişi — senkronizasyon için kritik
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Bağımlılıkları yükle
+        run: pip install -r requirements.txt
+
+      - name: Haberleri çek ve JSON'a yaz
+        run: python fetch_news.py
+        env:
+          # Gerekirse buraya API anahtarlarını ekle
+          # TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
+
+      - name: Değişiklik var mı kontrol et
+        id: check
+        run: |
+          if git diff --quiet news_data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit ve push (bulletproof yöntem)
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Uzaktaki son hali çek — push rejected hatasını bu önler
+          git pull --rebase origin main
+
+          git add news_data.json
+          git commit -m "chore: haberler güncellendi $(date +'%Y-%m-%d %H:%M UTC')"
+
+          # Retry mekanizması: 3 deneme, aralarında 5 saniye bekleme
+          for i in 1 2 3; do
+            git push && break
+            echo "Push başarısız, $i. deneme. 5 saniye bekleniyor..."
+            sleep 5
+            git pull --rebase origin main
+          done
+
+      - name: Sonuç özeti
+        run: |
+          if [ "${{ steps.check.outputs.changed }}" == "true" ]; then
+            echo "✅ news_data.json güncellendi ve push edildi."
+          else
+            echo "ℹ️ Yeni haber yok, commit atlanıldı."
+          fi
