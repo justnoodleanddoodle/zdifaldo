@@ -6,16 +6,16 @@ import time
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
-import anthropic
 import urllib.request
+import urllib.parse
 
 RSS_SOURCES = [
     { "name": "Smashing Magazine",        "url": "https://www.smashingmagazine.com/feed/",               "category": "ui"       },
     { "name": "Creative Bloq",            "url": "https://www.creativebloq.com/feed",                    "category": "general"  },
-    { "name": "It's Nice That",           "url": "https://www.itsnicethat.com/rss",                      "category": "general"  },
-    { "name": "Fast Company – Co.Design", "url": "https://www.fastcompany.com/co-design/rss",            "category": "general"  },
+    { "name": "Fast Company - Co.Design", "url": "https://www.fastcompany.com/co-design/rss",            "category": "general"  },
     { "name": "UX Collective",            "url": "https://uxdesign.cc/feed",                             "category": "ui"       },
-    { "name": "Brand New",                "url": "https://www.underconsideration.com/brandnew/index.rdf","category": "branding" },
+    { "name": "It's Nice That",           "url": "https://www.itsnicethat.com/feed.rss",                 "category": "general"  },
+    { "name": "Brand New",                "url": "https://www.underconsideration.com/brandnew/atom.xml", "category": "branding" },
 ]
 
 ITEMS_PER_SOURCE = 4
@@ -30,7 +30,6 @@ CATEGORY_LABELS = {
     "general":  "Design",
 }
 
-# Kategori bazlı fallback görseller
 FALLBACK_IMAGES = {
     "ui":       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
     "tools":    "https://images.unsplash.com/photo-1618788372246-79faff0c3742?w=600&q=80",
@@ -39,6 +38,13 @@ FALLBACK_IMAGES = {
     "motion":   "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80",
     "general":  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
 }
+
+# Ücretsiz LibreTranslate sunucuları (sırayla dener)
+LIBRE_SERVERS = [
+    "https://libretranslate.com",
+    "https://translate.argosopentech.com",
+    "https://libretranslate.de",
+]
 
 def make_id(url: str) -> str:
     return hashlib.md5(url.encode()).hexdigest()[:10]
@@ -52,12 +58,44 @@ def strip_html(text: str) -> str:
                .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " ") \
                .replace("&#8220;", '"').replace("&#8221;", '"').replace("&#8217;", "'")
     text = re.sub(r"\s+", " ", text).strip()
-    return text[:600]
+    return text[:500]
 
-def extract_image(entry, source_name: str) -> str | None:
-    """RSS entry'den görsel URL'si çıkar — çok katmanlı arama."""
+def translate_libre(text: str) -> str:
+    """LibreTranslate ile İngilizceden Almancaya çevir."""
+    if not text or not text.strip():
+        return text
+    
+    payload = json.dumps({
+        "q": text,
+        "source": "en",
+        "target": "de",
+        "format": "text"
+    }).encode("utf-8")
 
-    # 1. media:content
+    for server in LIBRE_SERVERS:
+        try:
+            req = urllib.request.Request(
+                f"{server}/translate",
+                data=payload,
+                headers={
+                    "Content-Type": "application/json",
+                    "User-Agent": "Mozilla/5.0"
+                },
+                method="POST"
+            )
+            with urllib.request.urlopen(req, timeout=10) as r:
+                result = json.loads(r.read().decode("utf-8"))
+                translated = result.get("translatedText", "")
+                if translated:
+                    return translated
+        except Exception as e:
+            print(f"     {server} hatasi: {e}")
+            continue
+    
+    # Hiçbir sunucu çalışmazsa orijinali döndür
+    return text
+
+def extract_image(entry) -> str | None:
     media = getattr(entry, "media_content", [])
     for m in media:
         url = m.get("url", "")
@@ -66,53 +104,29 @@ def extract_image(entry, source_name: str) -> str | None:
         if m.get("medium") == "image" and url:
             return url
 
-    # 2. media:thumbnail
     thumbs = getattr(entry, "media_thumbnail", [])
     if thumbs:
         return thumbs[0].get("url")
 
-    # 3. enclosure
     for enc in getattr(entry, "enclosures", []):
-        t = enc.get("type", "")
-        if t.startswith("image"):
+        if enc.get("type", "").startswith("image"):
             return enc.get("href") or enc.get("url")
 
-    # 4. İçerik / özet içindeki ilk <img>
     content = ""
     if hasattr(entry, "content") and entry.content:
         content = entry.content[0].get("value", "")
     if not content:
         content = getattr(entry, "summary", "") or ""
 
-    img_match = re.search(
-        r'<img[^>]+src=["\']([^"\']+)["\']',
-        content, re.IGNORECASE
-    )
+    img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content, re.IGNORECASE)
     if img_match:
         url = img_match.group(1)
         if url.startswith("http") and not url.endswith(".gif"):
             return url
-
-    # 5. og:image — sadece Smashing Magazine için (diğerleri yavaşlatır)
-    if source_name == "Smashing Magazine":
-        link = getattr(entry, "link", "")
-        if link:
-            try:
-                req = urllib.request.Request(link, headers={"User-Agent": "Mozilla/5.0"})
-                with urllib.request.urlopen(req, timeout=5) as r:
-                    html = r.read(8000).decode("utf-8", errors="ignore")
-                og = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html)
-                if not og:
-                    og = re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', html)
-                if og:
-                    return og.group(1)
-            except Exception:
-                pass
-
     return None
 
 def parse_feed(source: dict) -> list[dict]:
-    print(f"  → {source['name']} okunuyor...")
+    print(f"  -> {source['name']} okunuyor...")
     try:
         req = urllib.request.Request(
             source["url"],
@@ -130,7 +144,7 @@ def parse_feed(source: dict) -> list[dict]:
             if not summary_raw:
                 summary_raw = getattr(entry, "summary", "") or ""
 
-            image = extract_image(entry, source["name"])
+            image = extract_image(entry)
 
             items.append({
                 "id":               make_id(entry.get("link", entry.get("id", ""))),
@@ -146,59 +160,20 @@ def parse_feed(source: dict) -> list[dict]:
         found_img = sum(1 for i in items if i["image"])
         print(f"     {len(items)} haber, {found_img} gorsel bulundu.")
         return items
-
     except Exception as e:
         print(f"     HATA: {e}")
         return []
 
-def translate_batch(items: list[dict], client: anthropic.Anthropic) -> list[dict]:
-    if not items:
-        return items
-
-    blocks = []
+def translate_all(items: list[dict]) -> list[dict]:
+    print(f"\n  -> {len(items)} haber cevrilliyor (LibreTranslate)...")
     for i, item in enumerate(items):
-        blocks.append(f"[{i}]\nTITLE: {item['title']}\nSUMMARY: {item['summary_original'][:300]}")
-    combined = "\n\n".join(blocks)
-
-    prompt = f"""Du bist ein professioneller Design-Redakteur.
-Uebersetze die folgenden Nachrichtentitel und Zusammenfassungen ins Deutsche.
-Schreibe natuerliches, journalistisches Deutsch. Behalte Eigennamen bei (Figma, Adobe, CSS, UX, etc.).
-Antworte NUR mit einem JSON-Array. Kein weiterer Text, keine Markdown-Backticks, kein Kommentar.
-
-Exaktes Format (array mit {len(items)} objekten):
-[{{"title": "...", "summary": "..."}}]
-
-Nachrichten:
-{combined}
-"""
-
-    print(f"  → {len(items)} haber cevrilliyor...")
-    try:
-        message = client.messages.create(
-            model="claude-opus-4-5",
-            max_tokens=4096,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw = message.content[0].text.strip()
-        raw = re.sub(r"^```json\s*|^```\s*|```$", "", raw, flags=re.MULTILINE).strip()
-        # Sadece JSON array kısmını al
-        start = raw.find("[")
-        end = raw.rfind("]") + 1
-        if start != -1 and end > start:
-            raw = raw[start:end]
-        translations = json.loads(raw)
-
-        for i, item in enumerate(items):
-            if i < len(translations):
-                item["title_de"]   = translations[i].get("title", item["title"])
-                item["summary_de"] = translations[i].get("summary", item["summary_original"])
-            else:
-                item["title_de"]   = item["title"]
-                item["summary_de"] = item["summary_original"]
-        print(f"     Ceviri tamam.")
-    except Exception as e:
-        print(f"     Ceviri HATASI: {e}")
-        for item in items:
+        try:
+            item["title_de"]   = translate_libre(item["title"])
+            item["summary_de"] = translate_libre(item["summary_original"])
+            print(f"     [{i+1}/{len(items)}] {item['title_de'][:60]}...")
+            time.sleep(0.5)  # Sunucuyu yavaşlatma
+        except Exception as e:
+            print(f"     [{i+1}] Hata: {e}")
             item["title_de"]   = item["title"]
             item["summary_de"] = item["summary_original"]
     return items
@@ -217,36 +192,25 @@ def merge(existing: list, new_items: list) -> list:
     return (added + existing)[:80]
 
 def main():
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise EnvironmentError("ANTHROPIC_API_KEY bulunamadi.")
-
-    client = anthropic.Anthropic(api_key=api_key)
-    print(f"=== ZDiFaldo Haber Botu — {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} ===\n")
+    print(f"=== ZDiFaldo Haber Botu - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} ===\n")
 
     all_raw = []
     for source in RSS_SOURCES:
         all_raw.extend(parse_feed(source))
         time.sleep(1)
 
-    print(f"\nToplam {len(all_raw)} ham haber.\n")
+    print(f"\nToplam {len(all_raw)} ham haber.")
 
-    # Çeviriyi 15'er haberlik batch'lere böl (token limiti için)
-    translated = []
-    batch_size = 15
-    for i in range(0, len(all_raw), batch_size):
-        batch = all_raw[i:i+batch_size]
-        translated.extend(translate_batch(batch, client))
-        if i + batch_size < len(all_raw):
-            time.sleep(2)
+    # Çeviri
+    all_translated = translate_all(all_raw)
 
-    # Görseli olmayan haberlere fallback ekle
-    for item in translated:
+    # Görseli olmayanlara fallback ekle
+    for item in all_translated:
         if not item.get("image"):
             item["image"] = FALLBACK_IMAGES.get(item["category"], FALLBACK_IMAGES["general"])
 
     existing = load_existing(OUTPUT_FILE)
-    merged   = merge(existing.get("items", []), translated)
+    merged   = merge(existing.get("items", []), all_translated)
 
     output = {
         "updated_at":      datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -256,7 +220,7 @@ def main():
         "items":           merged,
     }
     OUTPUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n✅ {OUTPUT_FILE} guncellendi — {len(merged)} haber.")
+    print(f"\n✅ {OUTPUT_FILE} guncellendi - {len(merged)} haber.")
 
 if __name__ == "__main__":
     main()
