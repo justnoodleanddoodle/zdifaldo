@@ -1,7 +1,7 @@
 {
-  "updated_at": "",
+  "updated_at": "2026-06-05T11:55:32Z",
   "source_count": 6,
-  "item_count": 0,
+  "item_count": 16,
   "category_labels": {
     "ui": "UI/UX",
     "tools": "Software & Tools",
@@ -10,5 +10,198 @@
     "motion": "Motion & Plugins",
     "general": "Design"
   },
-  "items": []
+  "items": [
+    {
+      "id": "a49f665a4d",
+      "title": "How To Make Your Design System AI-Ready",
+      "summary_original": "AI-generated prototypes often don't deliver consistently decent results because of tiny inconsistencies scattered all across a design system. I's decisions made but not documented, hard-coded values never cleaned up, or relying too much on AI making sense of mock-ups or design flows on its own. Yesterday I stumbled upon a useful practical guide by Hardik Pandya from Atlassian — on how to reduce drifts , minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Let’s see how it works. 1. Design Decisions Are Infrastructure Unsurprisingly, better AI prototypes come",
+      "image": "http://files.smashing.media/articles/how-make-design-system-ai-ready/how-make-design-system-ai-ready.jpg",
+      "url": "https://smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Wed, 03 Jun 2026 13:00:00 GMT",
+      "title_de": "How To Make Your Design System AI-Ready",
+      "summary_de": "AI-generated prototypes often don't deliver consistently decent results because of tiny inconsistencies scattered all across a design system. I's decisions made but not documented, hard-coded values never cleaned up, or relying too much on AI making sense of mock-ups or design flows on its own. Yesterday I stumbled upon a useful practical guide by Hardik Pandya from Atlassian — on how to reduce drifts , minimize mistakes, maintain context, and improve the quality of AI-generated prototypes. Let’s see how it works. 1. Design Decisions Are Infrastructure Unsurprisingly, better AI prototypes come"
+    },
+    {
+      "id": "c1e41795fe",
+      "title": "June Is For Exploring (2026 Wallpapers Edition)",
+      "summary_original": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers series has been all about for over 15 years now. It’s a chance to step away from the everyday and dive into a fun, creative project. And this month is no different! Talented artists and designers from all o",
+      "image": "http://files.smashing.media/articles/desktop-wallpaper-calendars-june-2026/jun-26-drifting-into-june-preview-opt.png",
+      "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Sun, 31 May 2026 08:00:00 GMT",
+      "title_de": "June Is For Exploring (2026 Wallpapers Edition)",
+      "summary_de": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers series has been all about for over 15 years now. It’s a chance to step away from the everyday and dive into a fun, creative project. And this month is no different! Talented artists and designers from all o"
+    },
+    {
+      "id": "52c864579d",
+      "title": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
+      "summary_original": "The HTTP Archive Web Almanac has been tracking color contrast failures for years. The numbers have barely moved. After half a decade of design system tooling, accessibility linters, and entire JavaScript libraries dedicated to computing readable text colors, 70% of websites still fail basic WCAG contrast checks in 2025 . The WebAIM Million paints an even grimmer picture — 83.9% of homepages flagged for low contrast text in 2026, up from 79.1% in 2025. The rate improves by maybe a few percentage points per year on one benchmark and actually gets worse on another. That’s not progress — that’s pr",
+      "image": "http://files.smashing.media/articles/building-self-correcting-color-systems-contrast-color/building-self-correcting-color-systems-contrast-color.jpg",
+      "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Thu, 28 May 2026 13:00:00 GMT",
+      "title_de": "Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`",
+      "summary_de": "The HTTP Archive Web Almanac has been tracking color contrast failures for years. The numbers have barely moved. After half a decade of design system tooling, accessibility linters, and entire JavaScript libraries dedicated to computing readable text colors, 70% of websites still fail basic WCAG contrast checks in 2025 . The WebAIM Million paints an even grimmer picture — 83.9% of homepages flagged for low contrast text in 2026, up from 79.1% in 2025. The rate improves by maybe a few percentage points per year on one benchmark and actually gets worse on another. That’s not progress — that’s pr"
+    },
+    {
+      "id": "dc1dbd9bdf",
+      "title": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
+      "summary_original": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product testing, the problem is sharper. Finance users are trained to notice when something feels off: a balance that doesn’t add up, a field that accepts anything. When a banking prototype skips real authen",
+      "image": "http://files.smashing.media/articles/prototype-users-fix-protopie/prototype-users-fix-protopie.jpg",
+      "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
+      "source": "Smashing Magazine",
+      "category": "ui",
+      "published_raw": "Mon, 25 May 2026 12:00:00 GMT",
+      "title_de": "Your Prototype Is Not Being Honest With Your Users (And Here’s How To Fix It)",
+      "summary_de": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product testing, the problem is sharper. Finance users are trained to notice when something feels off: a balance that doesn’t add up, a field that accepts anything. When a banking prototype skips real authen"
+    },
+    {
+      "id": "beae57d33d",
+      "title": "Is there a Star Wars Easter egg lurking in the new Supergirl movie?",
+      "summary_original": "Supergirl movie artwork featuring what appears to be an alien from Star Wars",
+      "image": "https://cdn.mos.cms.futurecdn.net/QMTM9VZxcPDRks9TYFtS6Y-1280-80.jpg",
+      "url": "https://www.creativebloq.com/art/digital-art/is-there-a-star-wars-easter-egg-lurking-in-the-new-supergirl-movie",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 11:00:00 +0000",
+      "title_de": "Is there a Star Wars Easter egg lurking in the new Supergirl movie?",
+      "summary_de": "Supergirl movie artwork featuring what appears to be an alien from Star Wars"
+    },
+    {
+      "id": "6964406740",
+      "title": "One year on, why Nintendo Switch 2 has become my console of choice",
+      "summary_original": "A render of a Nintendo Switch 2 covered in gold confetti",
+      "image": "https://cdn.mos.cms.futurecdn.net/CxHZcJ4rW3ZBF5v24Ai4T7-1280-80.jpg",
+      "url": "https://www.creativebloq.com/entertainment/gaming/one-year-on-why-nintendo-switch-2-has-become-my-console-of-choice",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 10:00:00 +0000",
+      "title_de": "One year on, why Nintendo Switch 2 has become my console of choice",
+      "summary_de": "A render of a Nintendo Switch 2 covered in gold confetti"
+    },
+    {
+      "id": "b9921ece43",
+      "title": "How Legend of Mana artist Satoshi Matsuura is redefining a cult game’s visual identity",
+      "summary_original": "Anime like art for a retro inspired video game, two characters",
+      "image": "https://cdn.mos.cms.futurecdn.net/SXoTvK2nqBDMpvDk935ZyD-1280-80.jpg",
+      "url": "https://www.creativebloq.com/art/digital-art/how-legend-of-mana-artist-satoshi-matsuura-is-redefining-a-cult-games-visual-identity",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 09:00:00 +0000",
+      "title_de": "How Legend of Mana artist Satoshi Matsuura is redefining a cult game’s visual identity",
+      "summary_de": "Anime like art for a retro inspired video game, two characters"
+    },
+    {
+      "id": "75b768f1d6",
+      "title": "Wendy’s new branding commits a cardinal design sin",
+      "summary_original": "Wendy&#039;s logo featuring a red haired girl with freckles and pigtails",
+      "image": "https://cdn.mos.cms.futurecdn.net/upgcXwpdaKRo7eqAvQAePX-1280-80.jpg",
+      "url": "https://www.creativebloq.com/design/branding/wendys-new-branding-commits-a-cardinal-design-sin",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 08:00:00 +0000",
+      "title_de": "Wendy’s new branding commits a cardinal design sin",
+      "summary_de": "Wendy&#039;s logo featuring a red haired girl with freckles and pigtails"
+    },
+    {
+      "id": "f6359ce31d",
+      "title": "Bad Bunny’s little pink house is causing all sorts of trouble",
+      "summary_original": "There is a house in Humacao, Puerto Rico, that belongs to an 84-year-old man named Román Carrasco Delgado. Painted in pastel pink and yellow, it has a flat roof and a balcony. It’s a prototypical model of the modest, dignified architecture of a working-class barrio, the kind of home that generations of humble Puerto Ricans have built their lives inside. Bad Bunny borrowed the house design and called it “La Casita” (“the little house” in Spanish). He used it in Debí Tirar Más Fotos ( I Should Have Taken More Photos ), a short film he created to protest the rapid gentrification, displacement of ",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91553991-bad-bunny-la-casita.jpg",
+      "url": "https://www.fastcompany.com/91553991/bad-bunny-little-pink-house-is-causing-all-sorts-of-trouble?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-05T10:30:00",
+      "title_de": "Bad Bunny’s little pink house is causing all sorts of trouble",
+      "summary_de": "There is a house in Humacao, Puerto Rico, that belongs to an 84-year-old man named Román Carrasco Delgado. Painted in pastel pink and yellow, it has a flat roof and a balcony. It’s a prototypical model of the modest, dignified architecture of a working-class barrio, the kind of home that generations of humble Puerto Ricans have built their lives inside. Bad Bunny borrowed the house design and called it “La Casita” (“the little house” in Spanish). He used it in Debí Tirar Más Fotos ( I Should Have Taken More Photos ), a short film he created to protest the rapid gentrification, displacement of "
+    },
+    {
+      "id": "4b1b869dc2",
+      "title": "Russia is using a World War I camouflage design to try and fool Ukrainian drones",
+      "summary_original": "The Russians are using spray paint to fight the Ukrainian robot drones that are decimating their Army’s supply lines. They are painting trucks with stark black-and-white zigzags and blotches covering everything from the chassis to the tires. Yes, you read that right. It’s 2026, and the Russian army is slapping a paint job on its logistics trucks that would look right at home on a 1918 battleship. The British started to paint ships with this type of “dazzle” camouflage during World War I in an effort to confuse enemy ships. The theory was that the angled, sharply contrasted patterns would trick",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91552974-anti-ai-dazzle-paint.jpg",
+      "url": "https://www.fastcompany.com/91552974/russia-dazzle-camouflage-drones?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-05T10:00:00",
+      "title_de": "Russia is using a World War I camouflage design to try and fool Ukrainian drones",
+      "summary_de": "The Russians are using spray paint to fight the Ukrainian robot drones that are decimating their Army’s supply lines. They are painting trucks with stark black-and-white zigzags and blotches covering everything from the chassis to the tires. Yes, you read that right. It’s 2026, and the Russian army is slapping a paint job on its logistics trucks that would look right at home on a 1918 battleship. The British started to paint ships with this type of “dazzle” camouflage during World War I in an effort to confuse enemy ships. The theory was that the angled, sharply contrasted patterns would trick"
+    },
+    {
+      "id": "4a0df7e734",
+      "title": "The U.K.’s next banknotes might feature cute foxes and prismatic butterflies",
+      "summary_original": "What do a European hedgehog, a Eurasian curlew, and a buff-tailed bumblebee have in common? They all might be the stars of the U.K.'s next run of banknotes. Following a public consultation last year, the Bank of England has decided its next series of £5, £10, £20, and £50 bills will feature wildlife instead of historical figures. The financial institution is letting the public vote on which creatures will star on the paper currency. The central bank released a shortlist of 18 species divided into three categories—mammals; birds; and amphibians, insects, and fish—with a public vote open from Ju",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91553932-animal-banknotes-uk.jpg",
+      "url": "https://www.fastcompany.com/91553932/uk-banknotes-wildlife-redesign?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-05T10:00:00",
+      "title_de": "The U.K.’s next banknotes might feature cute foxes and prismatic butterflies",
+      "summary_de": "What do a European hedgehog, a Eurasian curlew, and a buff-tailed bumblebee have in common? They all might be the stars of the U.K.'s next run of banknotes. Following a public consultation last year, the Bank of England has decided its next series of £5, £10, £20, and £50 bills will feature wildlife instead of historical figures. The financial institution is letting the public vote on which creatures will star on the paper currency. The central bank released a shortlist of 18 species divided into three categories—mammals; birds; and amphibians, insects, and fish—with a public vote open from Ju"
+    },
+    {
+      "id": "77a25d9879",
+      "title": "Cash App’s new payment wand is pure whimsy",
+      "summary_original": "Cash App is introducing a new way of paying: waving a fairy-like wand. The technology is not magic. Instead, it is one of Cash App's NFC-enabled tags, which lets users complete tap-to-pay transactions without a traditional card or phone. The $25 pearlescent wand features a light green faux gemstone at the center of its star-shaped tip, and it's small enough to clip to a key chain. With 10,000 wands in the initial drop, the gadget is part of a broader line of Cash App tags. Users connect the wand to their Cash App Card, which is linked to their Cash App account. According to the company, users ",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/p-1-91554336-cashapp-payment-wand.jpg",
+      "url": "https://www.fastcompany.com/91554336/cash-app-payment-wand-magic?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company – Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-05T10:00:00",
+      "title_de": "Cash App’s new payment wand is pure whimsy",
+      "summary_de": "Cash App is introducing a new way of paying: waving a fairy-like wand. The technology is not magic. Instead, it is one of Cash App's NFC-enabled tags, which lets users complete tap-to-pay transactions without a traditional card or phone. The $25 pearlescent wand features a light green faux gemstone at the center of its star-shaped tip, and it's small enough to clip to a key chain. With 10,000 wands in the initial drop, the gadget is part of a broader line of Cash App tags. Users connect the wand to their Cash App Card, which is linked to their Cash App account. According to the company, users "
+    },
+    {
+      "id": "23100a7e6c",
+      "title": "Design’s alive and kicking. It just got some flashy new names.",
+      "summary_original": "Here’s which design roles are emerging in the age of AI. Source The tech community has been gripped by a collective anxiety. If you browse tech subreddits or check newsletters, the headlines paint a stark picture: AI is coming for white-collar jobs. Coding is dead. Design is obsolete . Last month, AI pioneer Andrew Ng published a piece pushing back on this “jobpocalypse” narrative, arguing that AI is spinning up entirely new, highly specialized career paths. He focused on the engineering angle: roles like the AI Forward Deployed Engineer (who parachutes into client companies to customize agent",
+      "image": "https://cdn-images-1.medium.com/max/1024/0*1YEZWt9mMk1hqFdz.jpg",
+      "url": "https://uxdesign.cc/designs-alive-and-kicking-it-just-got-some-flashy-new-names-779b4503c869?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Fri, 05 Jun 2026 11:14:48 GMT",
+      "title_de": "Design’s alive and kicking. It just got some flashy new names.",
+      "summary_de": "Here’s which design roles are emerging in the age of AI. Source The tech community has been gripped by a collective anxiety. If you browse tech subreddits or check newsletters, the headlines paint a stark picture: AI is coming for white-collar jobs. Coding is dead. Design is obsolete . Last month, AI pioneer Andrew Ng published a piece pushing back on this “jobpocalypse” narrative, arguing that AI is spinning up entirely new, highly specialized career paths. He focused on the engineering angle: roles like the AI Forward Deployed Engineer (who parachutes into client companies to customize agent"
+    },
+    {
+      "id": "27d9b3f03d",
+      "title": "Designing for care, not growth",
+      "summary_original": "From healing fiction to smart feeders, the booming pet economy shows what design looks like when households shrink instead of grow. The modern companion of choice: self-contained, low-maintenance, and entirely at home in a small flat. Image source Walk into a bookshop in Britain or the US, and you will find a table, usually near the front, stacked with novels about cats. Not children’s books. Gentle, faintly magical stories for adults, in which a cat narrates, or saves a bookshop, or guides a lonely person back towards other people. The Travelling Cat Chronicles . The Cat Who Saved Books . We’",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*JreD8yZO8Rd4cgX4pCIdMg.png",
+      "url": "https://uxdesign.cc/designing-for-care-not-growth-274d460f968c?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Fri, 05 Jun 2026 11:14:28 GMT",
+      "title_de": "Designing for care, not growth",
+      "summary_de": "From healing fiction to smart feeders, the booming pet economy shows what design looks like when households shrink instead of grow. The modern companion of choice: self-contained, low-maintenance, and entirely at home in a small flat. Image source Walk into a bookshop in Britain or the US, and you will find a table, usually near the front, stacked with novels about cats. Not children’s books. Gentle, faintly magical stories for adults, in which a cat narrates, or saves a bookshop, or guides a lonely person back towards other people. The Travelling Cat Chronicles . The Cat Who Saved Books . We’"
+    },
+    {
+      "id": "f98c2f4db1",
+      "title": "You’re not building a product. You’re running a project",
+      "summary_original": "I said those words to a &#xa3;30M bootstrapped CFO mid-interview. Continue reading on UX Collective »",
+      "image": "https://cdn-images-1.medium.com/max/1280/0*K-J20WXrWYdrygtb.png",
+      "url": "https://uxdesign.cc/youre-not-building-a-product-you-re-running-a-project-a8fdec68788c?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Fri, 05 Jun 2026 07:39:19 GMT",
+      "title_de": "You’re not building a product. You’re running a project",
+      "summary_de": "I said those words to a &#xa3;30M bootstrapped CFO mid-interview. Continue reading on UX Collective »"
+    },
+    {
+      "id": "252cf17768",
+      "title": "The rhetorical mask of innovation",
+      "summary_original": "How a single word lets us claim progress before we prove it 1970s Reliant Robin | Image source: https://www.adrianflux.co.uk/cult-classics/reliant-robin/ What is innovation? We hear this word used constantly, particularly in the creative, technology, healthcare, and education sectors. Companies advertise innovative products, hospitals implement innovative care models, and universities promote innovative programs — the word has become so ubiquitous that almost nobody stops to ask who benefits from that ubiquity. According to Merriam-Webster , innovation is defined simply as a new idea, method, ",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*VGVtLAWs9YbnyOgBYWOGIA.jpeg",
+      "url": "https://uxdesign.cc/the-rhetorical-mask-of-innovation-12f3abcd6120?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Thu, 04 Jun 2026 19:15:48 GMT",
+      "title_de": "The rhetorical mask of innovation",
+      "summary_de": "How a single word lets us claim progress before we prove it 1970s Reliant Robin | Image source: https://www.adrianflux.co.uk/cult-classics/reliant-robin/ What is innovation? We hear this word used constantly, particularly in the creative, technology, healthcare, and education sectors. Companies advertise innovative products, hospitals implement innovative care models, and universities promote innovative programs — the word has become so ubiquitous that almost nobody stops to ask who benefits from that ubiquity. According to Merriam-Webster , innovation is defined simply as a new idea, method, "
+    }
+  ]
 }
