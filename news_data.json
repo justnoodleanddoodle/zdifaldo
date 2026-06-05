@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05T12:06:35Z",
+  "updated_at": "2026-06-05T16:37:09Z",
   "source_count": 6,
-  "item_count": 20,
+  "item_count": 23,
   "category_labels": {
     "ui": "UI/UX",
     "tools": "Software & Tools",
@@ -11,6 +11,42 @@
     "general": "Design"
   },
   "items": [
+    {
+      "id": "c4daef9844",
+      "title": "Are junior creative roles really disappearing?",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/B9pyj5KGHiXQvBL5bcgb4C.png",
+      "image": "https://cdn.mos.cms.futurecdn.net/LnXpi4EWxteKnsxrTeGD4b-1280-80.jpg",
+      "url": "https://www.creativebloq.com/professional-development/creative-careers/are-junior-creative-roles-really-disappearing",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 15:00:00 +0000",
+      "title_de": "Are junior creative roles really disappearing?",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/B9pyj5KGHiXQvBL5bcgb4C.png"
+    },
+    {
+      "id": "495b6a1f6f",
+      "title": "Honor's new top smartphone gives an iOS experience and is £200 off right now",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/3N8iLvfgS6wbbrtCuyNWWG.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/b6UywvwgmkY7vbjsDz4gwK-1280-80.jpg",
+      "url": "https://www.creativebloq.com/tech/phones-tablets/honors-new-top-smartphone-gives-an-ios-experience-and-is-gbp200-off-right-now",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 14:46:11 +0000",
+      "title_de": "Honor's new top smartphone gives an iOS experience and is £200 off right now",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/3N8iLvfgS6wbbrtCuyNWWG.jpg"
+    },
+    {
+      "id": "5841aed0f8",
+      "title": "Cash App swaps boring bank cards for magic wands",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/ieMCBUvEp9jucaWRxi3QGg.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/2kxNWqmnJm77smNwGHKC8e-1280-80.jpg",
+      "url": "https://www.creativebloq.com/design/branding/cash-app-swaps-boring-bank-cards-for-magic-wands",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Fri, 05 Jun 2026 13:00:00 +0000",
+      "title_de": "Cash App swaps boring bank cards for magic wands",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/ieMCBUvEp9jucaWRxi3QGg.jpg"
+    },
     {
       "id": "a49f665a4d",
       "title": "How To Make Your Design System AI-Ready",
