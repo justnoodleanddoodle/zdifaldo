@@ -63,7 +63,7 @@ function formatDate(raw) {
   } catch { return "Heute"; }
 }
 
-// Claude API ile makale içeriği çek ve Almancaya çevir
+// Makale icerigi - ozet genisletme
 async function fetchArticleContent(url, title) {
   const prompt = `Besuche diese URL und extrahiere den vollständigen Artikeltext: ${url}
 
@@ -105,9 +105,13 @@ function ArticleModal({ item, onClose }) {
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    fetchArticleContent(item.url, item.title_de || item.title)
-      .then(c => { setContent(c); setLoading(false); })
-      .catch(() => { setError(true); setLoading(false); });
+    try {
+      const html = buildArticleContent(item);
+      setContent(html);
+    } catch(e) {
+      setError(true);
+    }
+    setLoading(false);
     return () => { document.body.style.overflow = ""; };
   }, []);
 
