@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05T16:37:09Z",
+  "updated_at": "2026-06-06T12:01:46Z",
   "source_count": 6,
-  "item_count": 23,
+  "item_count": 28,
   "category_labels": {
     "ui": "UI/UX",
     "tools": "Software & Tools",
@@ -11,6 +11,66 @@
     "general": "Design"
   },
   "items": [
+    {
+      "id": "3da7d51fc8",
+      "title": "Everything looks the same. Now what?",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/UD4jhd9bRPn6FJC9MJs534.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/dksg85maHtxuGQL6vcViKL-1280-80.jpg",
+      "url": "https://www.creativebloq.com/ai/everything-looks-the-same-now-what",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Sat, 06 Jun 2026 11:00:00 +0000",
+      "title_de": "Everything looks the same. Now what?",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/UD4jhd9bRPn6FJC9MJs534.jpg"
+    },
+    {
+      "id": "8e59f97164",
+      "title": "“Cautious adoption, not blind enthusiasm”: how to build an AI rebrand in a sea of sceptics",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/ieMCBUvEp9jucaWRxi3QGg.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/SKnwsAByvZrSjSucSeJLwS-1280-80.jpg",
+      "url": "https://www.creativebloq.com/design/branding/cautious-adoption-not-blind-enthusiasm-how-to-build-an-ai-rebrand-in-a-sea-of-sceptics",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Sat, 06 Jun 2026 10:00:00 +0000",
+      "title_de": "“Cautious adoption, not blind enthusiasm”: how to build an AI rebrand in a sea of sceptics",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/ieMCBUvEp9jucaWRxi3QGg.jpg"
+    },
+    {
+      "id": "c8c669d026",
+      "title": "Fans want to send this new Stranger Things spin-off back to the Upside Down",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/hbsproUCeW5KrAmq2srjBY.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/LZR5qHrByZh3M88XWq5JyU-1280-80.png",
+      "url": "https://www.creativebloq.com/3d/video-game-design/fans-want-to-send-this-stranger-things-spin-off-back-to-the-upside-down",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Sat, 06 Jun 2026 09:00:00 +0000",
+      "title_de": "Fans want to send this new Stranger Things spin-off back to the Upside Down",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/hbsproUCeW5KrAmq2srjBY.jpg"
+    },
+    {
+      "id": "6437eb6896",
+      "title": "Is Steam's sleek redesign good or bad for indie game developers?",
+      "summary_original": "https://cdn.mos.cms.futurecdn.net/hbsproUCeW5KrAmq2srjBY.jpg",
+      "image": "https://cdn.mos.cms.futurecdn.net/n7rqZNyUoSKBHF7Dyc3W2C-1280-80.jpg",
+      "url": "https://www.creativebloq.com/3d/video-game-design/is-steams-more-modern-redesign-good-or-bad-for-indie-game-developers",
+      "source": "Creative Bloq",
+      "category": "general",
+      "published_raw": "Sat, 06 Jun 2026 07:00:00 +0000",
+      "title_de": "Is Steam's sleek redesign good or bad for indie game developers?",
+      "summary_de": "https://cdn.mos.cms.futurecdn.net/hbsproUCeW5KrAmq2srjBY.jpg"
+    },
+    {
+      "id": "48afe925bb",
+      "title": "The racetrack is getting a long overdue makeover",
+      "summary_original": "The historic racetracks that host the Triple Crown of Thoroughbred Racing are each in the midst of an evolution, with major upgrades, renovations, and in one case, a complete rebuild—and they're all happening at once. It's part of an industry-level reckoning with the changing demands of horseracing spectators, and the changing fortunes of horseracing itself. The three racetracks—Churchill Downs in Louisville, Pimlico Race Course in Baltimore, and Belmont Park in Elmont, New York—are all in vario",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/06/03-91552552-racetrack-renovations.jpg",
+      "url": "https://www.fastcompany.com/91552552/the-racetrack-is-getting-an-overdue-makeover?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss",
+      "source": "Fast Company - Co.Design",
+      "category": "general",
+      "published_raw": "2026-06-06T11:00:00",
+      "title_de": "The racetrack is getting a long overdue makeover",
+      "summary_de": "The historic racetracks that host the Triple Crown of Thoroughbred Racing are each in the midst of an evolution, with major upgrades, renovations, and in one case, a complete rebuild—and they're all happening at once. It's part of an industry-level reckoning with the changing demands of horseracing spectators, and the changing fortunes of horseracing itself. The three racetracks—Churchill Downs in Louisville, Pimlico Race Course in Baltimore, and Belmont Park in Elmont, New York—are all in vario"
+    },
     {
       "id": "c4daef9844",
       "title": "Are junior creative roles really disappearing?",
