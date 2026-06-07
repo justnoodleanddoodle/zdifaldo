@@ -51,27 +51,44 @@ def strip_html(text: str) -> str:
                .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " ") \
                .replace("&#8220;", '"').replace("&#8221;", '"').replace("&#8217;", "'")
     text = re.sub(r"\s+", " ", text).strip()
-    return text[:400]
+    return text
 
 def translate_mymemory(text: str) -> str:
-    """MyMemory API ile ücretsiz çeviri — kayıt gerektirmez."""
     if not text or not text.strip():
         return text
+    # 500 karakterlik parçalara böl
+    chunks = [text[i:i+500] for i in range(0, min(len(text), 3000), 500)]
+    translated_chunks = []
+    for chunk in chunks:
+        try:
+            params = urllib.parse.urlencode({"q": chunk, "langpair": "en|de"})
+            url = f"https://api.mymemory.translated.net/get?{params}"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.loads(r.read().decode("utf-8"))
+                t = data.get("responseData", {}).get("translatedText", "")
+                if t and t != "INVALID LANGUAGE PAIR":
+                    translated_chunks.append(t)
+                else:
+                    translated_chunks.append(chunk)
+            time.sleep(0.3)
+        except Exception as e:
+            translated_chunks.append(chunk)
+    return " ".join(translated_chunks)
+
+def fetch_full_content(url: str) -> str:
+    """Makale sayfasından tam içeriği çek — trafilatura ile."""
     try:
-        params = urllib.parse.urlencode({
-            "q": text[:500],
-            "langpair": "en|de"
-        })
-        url = f"https://api.mymemory.translated.net/get?{params}"
+        import trafilatura
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            translated = data.get("responseData", {}).get("translatedText", "")
-            if translated and translated != "INVALID LANGUAGE PAIR":
-                return translated
+        with urllib.request.urlopen(req, timeout=15) as r:
+            html = r.read().decode("utf-8", errors="ignore")
+        text = trafilatura.extract(html, include_comments=False, include_tables=False)
+        if text and len(text) > 200:
+            return text[:4000]  # Max 4000 karakter
     except Exception as e:
-        print(f"     MyMemory hatasi: {e}")
-    return text
+        print(f"     Icerik cekme hatasi: {e}")
+    return ""
 
 def extract_image(entry) -> str | None:
     media = getattr(entry, "media_content", [])
@@ -126,7 +143,8 @@ def parse_feed(source: dict) -> list[dict]:
             items.append({
                 "id":               make_id(entry.get("link", entry.get("id", ""))),
                 "title":            entry.get("title", "").strip(),
-                "summary_original": strip_html(summary_raw),
+                "summary_original": strip_html(summary_raw)[:500],
+                "full_content":     "",
                 "image":            image,
                 "url":              entry.get("link", ""),
                 "source":           source["name"],
@@ -141,13 +159,38 @@ def parse_feed(source: dict) -> list[dict]:
         print(f"     HATA: {e}")
         return []
 
-def translate_all(items: list[dict]) -> list[dict]:
-    print(f"\n  -> {len(items)} haber MyMemory ile cevriliyor...")
+def enrich_and_translate(items: list[dict]) -> list[dict]:
+    print(f"\n  -> {len(items)} haber icin tam icerik cekiliyor ve cevriliyor...")
     for i, item in enumerate(items):
-        item["title_de"]   = translate_mymemory(item["title"])
+        print(f"\n  [{i+1}/{len(items)}] {item['title'][:60]}")
+
+        # 1. Tam içerik çek
+        full = fetch_full_content(item["url"])
+        if not full:
+            full = item["summary_original"]
+        item["full_content_original"] = full
+
+        # 2. Başlık çevir
+        item["title_de"] = translate_mymemory(item["title"])
+        print(f"     Baslik: {item['title_de'][:60]}")
+
+        # 3. Özet çevir
         item["summary_de"] = translate_mymemory(item["summary_original"])
-        print(f"     [{i+1}/{len(items)}] {item['title_de'][:70]}")
-        time.sleep(0.3)
+
+        # 4. Tam içerik çevir (paragraflara bölerek)
+        if full and full != item["summary_original"]:
+            paragraphs = [p.strip() for p in full.split("\n") if p.strip()]
+            translated_paragraphs = []
+            for p in paragraphs[:20]:  # Max 20 paragraf
+                tp = translate_mymemory(p)
+                translated_paragraphs.append(tp)
+            item["full_content_de"] = "\n\n".join(translated_paragraphs)
+        else:
+            item["full_content_de"] = item["summary_de"]
+
+        print(f"     Icerik: {len(item['full_content_de'])} karakter")
+        time.sleep(0.5)
+
     return items
 
 def load_existing(path: Path) -> dict:
@@ -173,14 +216,14 @@ def main():
 
     print(f"\nToplam {len(all_raw)} ham haber.")
 
-    all_translated = translate_all(all_raw)
+    all_enriched = enrich_and_translate(all_raw)
 
-    for item in all_translated:
+    for item in all_enriched:
         if not item.get("image"):
             item["image"] = FALLBACK_IMAGES.get(item["category"], FALLBACK_IMAGES["general"])
 
     existing = load_existing(OUTPUT_FILE)
-    merged   = merge(existing.get("items", []), all_translated)
+    merged   = merge(existing.get("items", []), all_enriched)
 
     output = {
         "updated_at":      datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
