@@ -10,24 +10,45 @@ import urllib.request
 import urllib.parse
 
 RSS_SOURCES = [
-    { "name": "Smashing Magazine",        "url": "https://www.smashingmagazine.com/feed/",               "category": "ui"       },
-    { "name": "Creative Bloq",            "url": "https://www.creativebloq.com/feed",                    "category": "general"  },
-    { "name": "Fast Company - Co.Design", "url": "https://www.fastcompany.com/co-design/rss",            "category": "general"  },
-    { "name": "UX Collective",            "url": "https://uxdesign.cc/feed",                             "category": "ui"       },
-    { "name": "It's Nice That",           "url": "https://www.itsnicethat.com/feed.rss",                 "category": "general"  },
-    { "name": "Brand New",                "url": "https://www.underconsideration.com/brandnew/atom.xml", "category": "branding" },
+    # Motion Design & After Effects
+    { "name": "Motionographer",      "url": "https://motionographer.com/feed/",                                "category": "motion"     },
+    { "name": "aescripts",           "url": "https://aescripts.com/rss/",                                     "category": "motion"     },
+    { "name": "School of Motion",    "url": "https://www.motiondesign.school/blog/feed/",                     "category": "motion"     },
+    # 3D & Blender
+    { "name": "Blender.org",         "url": "https://www.blender.org/feed/",                                  "category": "visual"     },
+    { "name": "BlenderNation",       "url": "https://www.blendernation.com/feed/",                            "category": "visual"     },
+    # Branding & Logo
+    { "name": "Brand New",           "url": "https://www.underconsideration.com/brandnew/atom.xml",           "category": "branding"   },
+    { "name": "The Dieline",         "url": "https://www.thedieline.com/feed",                                "category": "branding"   },
+    # Tipografi
+    { "name": "I Love Typography",   "url": "https://ilovetypography.com/feed/",                             "category": "typography" },
+    { "name": "Fonts In Use",        "url": "https://fontsinuse.com/feed",                                    "category": "typography" },
+    # AI & Kreativ Teknoloji
+    { "name": "Adobe Blog",          "url": "https://blog.adobe.com/en/topics/creativity/feed",               "category": "ai"         },
+    { "name": "The Verge Design",    "url": "https://www.theverge.com/rss/design/index.xml",                  "category": "ai"         },
+    # UI/UX
+    { "name": "Smashing Magazine",   "url": "https://www.smashingmagazine.com/feed/",                        "category": "ui"         },
+    { "name": "UX Collective",       "url": "https://uxdesign.cc/feed",                                       "category": "ui"         },
+    # Genel Design & Ilham
+    { "name": "Designboom",          "url": "https://www.designboom.com/feed/",                               "category": "general"    },
+    { "name": "It's Nice That",      "url": "https://www.itsnicethat.com/feed.rss",                          "category": "general"    },
+    { "name": "Creative Boom",       "url": "https://www.creativeboom.com/feed/",                             "category": "general"    },
+    { "name": "Abduzeedo",           "url": "https://abduzeedo.com/rss.xml",                                  "category": "general"    },
+    { "name": "PAGE Online",         "url": "https://page-online.de/feed/",                                   "category": "general"    },
+    { "name": "Slanted",             "url": "https://slanted.de/feed/",                                       "category": "general"    },
 ]
 
-ITEMS_PER_SOURCE = 4
+ITEMS_PER_SOURCE = 3
 OUTPUT_FILE = Path("news_data.json")
 
 CATEGORY_LABELS = {
-    "ui":       "UI/UX",
-    "tools":    "Software & Tools",
-    "ai":       "KI & Bildrechte",
-    "branding": "Branding & Typo",
-    "motion":   "Motion & Plugins",
-    "general":  "Design",
+    "ui":         "UI/UX",
+    "ai":         "KI & Adobe",
+    "branding":   "Branding & Logo",
+    "motion":     "Motion & AE",
+    "typography": "Typografie",
+    "visual":     "3D & Blender",
+    "general":    "Inspiration",
 }
 
 FALLBACK_IMAGES = {
