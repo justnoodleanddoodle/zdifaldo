@@ -39,13 +39,6 @@ FALLBACK_IMAGES = {
     "general":  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
 }
 
-# Ücretsiz LibreTranslate sunucuları (sırayla dener)
-LIBRE_SERVERS = [
-    "https://libretranslate.com",
-    "https://translate.argosopentech.com",
-    "https://libretranslate.de",
-]
-
 def make_id(url: str) -> str:
     return hashlib.md5(url.encode()).hexdigest()[:10]
 
@@ -58,41 +51,26 @@ def strip_html(text: str) -> str:
                .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " ") \
                .replace("&#8220;", '"').replace("&#8221;", '"').replace("&#8217;", "'")
     text = re.sub(r"\s+", " ", text).strip()
-    return text[:500]
+    return text[:400]
 
-def translate_libre(text: str) -> str:
-    """LibreTranslate ile İngilizceden Almancaya çevir."""
+def translate_mymemory(text: str) -> str:
+    """MyMemory API ile ücretsiz çeviri — kayıt gerektirmez."""
     if not text or not text.strip():
         return text
-    
-    payload = json.dumps({
-        "q": text,
-        "source": "en",
-        "target": "de",
-        "format": "text"
-    }).encode("utf-8")
-
-    for server in LIBRE_SERVERS:
-        try:
-            req = urllib.request.Request(
-                f"{server}/translate",
-                data=payload,
-                headers={
-                    "Content-Type": "application/json",
-                    "User-Agent": "Mozilla/5.0"
-                },
-                method="POST"
-            )
-            with urllib.request.urlopen(req, timeout=10) as r:
-                result = json.loads(r.read().decode("utf-8"))
-                translated = result.get("translatedText", "")
-                if translated:
-                    return translated
-        except Exception as e:
-            print(f"     {server} hatasi: {e}")
-            continue
-    
-    # Hiçbir sunucu çalışmazsa orijinali döndür
+    try:
+        params = urllib.parse.urlencode({
+            "q": text[:500],
+            "langpair": "en|de"
+        })
+        url = f"https://api.mymemory.translated.net/get?{params}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read().decode("utf-8"))
+            translated = data.get("responseData", {}).get("translatedText", "")
+            if translated and translated != "INVALID LANGUAGE PAIR":
+                return translated
+    except Exception as e:
+        print(f"     MyMemory hatasi: {e}")
     return text
 
 def extract_image(entry) -> str | None:
@@ -145,7 +123,6 @@ def parse_feed(source: dict) -> list[dict]:
                 summary_raw = getattr(entry, "summary", "") or ""
 
             image = extract_image(entry)
-
             items.append({
                 "id":               make_id(entry.get("link", entry.get("id", ""))),
                 "title":            entry.get("title", "").strip(),
@@ -165,17 +142,12 @@ def parse_feed(source: dict) -> list[dict]:
         return []
 
 def translate_all(items: list[dict]) -> list[dict]:
-    print(f"\n  -> {len(items)} haber cevrilliyor (LibreTranslate)...")
+    print(f"\n  -> {len(items)} haber MyMemory ile cevriliyor...")
     for i, item in enumerate(items):
-        try:
-            item["title_de"]   = translate_libre(item["title"])
-            item["summary_de"] = translate_libre(item["summary_original"])
-            print(f"     [{i+1}/{len(items)}] {item['title_de'][:60]}...")
-            time.sleep(0.5)  # Sunucuyu yavaşlatma
-        except Exception as e:
-            print(f"     [{i+1}] Hata: {e}")
-            item["title_de"]   = item["title"]
-            item["summary_de"] = item["summary_original"]
+        item["title_de"]   = translate_mymemory(item["title"])
+        item["summary_de"] = translate_mymemory(item["summary_original"])
+        print(f"     [{i+1}/{len(items)}] {item['title_de'][:70]}")
+        time.sleep(0.3)
     return items
 
 def load_existing(path: Path) -> dict:
@@ -201,10 +173,8 @@ def main():
 
     print(f"\nToplam {len(all_raw)} ham haber.")
 
-    # Çeviri
     all_translated = translate_all(all_raw)
 
-    # Görseli olmayanlara fallback ekle
     for item in all_translated:
         if not item.get("image"):
             item["image"] = FALLBACK_IMAGES.get(item["category"], FALLBACK_IMAGES["general"])
