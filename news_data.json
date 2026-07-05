@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T09:25:17Z",
+  "updated_at": "2026-07-05T09:44:44Z",
   "source_count": 19,
   "item_count": 100,
   "category_labels": {
@@ -12,6 +12,71 @@
     "general": "Inspiration"
   },
   "items": [
+    {
+      "id": "2aa0911655",
+      "title": "The face was never the point",
+      "summary_original": "Animacy isn&#x2019;t something you design. It&#x2019;s something you trigger. Continue reading on UX Collective »",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80",
+      "url": "https://uxdesign.cc/the-face-was-never-the-point-7f186f266e56?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Sat, 04 Jul 2026 22:58:03 GMT",
+      "title_de": "Das Gesicht war nie der Punkt",
+      "summary_de": "Animation ist nichts, was man entwirft. Es ist etwas, das du auslöst. Lesen Sie weiter auf UX Collective »",
+      "full_content_de": "Animation ist nichts, was man entwirft. Es ist etwas, das du auslöst. Lesen Sie weiter auf UX Collective »"
+    },
+    {
+      "id": "5748e0e5ee",
+      "title": "Never mind the prompts, here’s the thinking",
+      "summary_original": "I spent a year rebuilding my studio’s entire design process around AI. It didn’t make us faster, and that’s exactly why it worked. It also left behind a kind of debt nobody’s talking about. The fastest-looking part of the process is the one that needs a human holding the scissors. Everyone is selling you this pitch about AI and design: it’s faster. Ten times faster. Ship in an afternoon what used to take a month, watch a prototype assemble itself while you sip your coffee. I bought it too. Then I spent the better part of a year rebuilding my studio’s entire design process around AI, across four real products, with real clients, real deadlines, and collaborating with real engineers who were used to standard deliverables. To be blunt, it didn’t make us faster. Our sprints took five days befo",
+      "image": "https://cdn-images-1.medium.com/max/1024/1*X2hy8ttpHSixu9HsPJke1w.jpeg",
+      "url": "https://uxdesign.cc/never-mind-the-prompts-heres-the-thinking-f4af4b92155f?source=rss----138adf9c44c---4",
+      "source": "UX Collective",
+      "category": "ui",
+      "published_raw": "Sat, 04 Jul 2026 16:37:02 GMT",
+      "title_de": "Kümmern Sie sich nicht um die Aufforderungen, hier ist die Denkweise",
+      "summary_de": "Ich habe ein Jahr damit verbracht, den gesamten Designprozess meines Studios rund um KI neu aufzubauen. Es hat uns nicht schneller gemacht, und genau deshalb hat es funktioniert. Es hinterließ auch eine Art Schulden, über die niemand spricht. Der am schnellsten aussehende Teil des Prozesses ist der, bei dem ein Mensch die Schere halten muss. Jeder verkauft Ihnen diesen Pitch über KI und Design: Es ist schneller. Zehnmal schneller. Versenden Sie an einem Nachmittag, was früher einen Monat dauerte, und beobachten Sie, wie sich ein Prototyp zusammenbaut, während Sie an Ihrem Kaffee nippen. Ich habe es auch gekauft. Dann verbrachte ich den größten Teil eines Jahres damit, den gesamten Designprozess meines Studios rund um KI neu aufzubauen, für vier echte Produkte, mit echten Kunden, echten Fristen und der Zusammenarbeit mit echten Ingenieuren, die an Standardergebnisse gewöhnt waren. Um ehrlich zu sein: Es hat uns nicht schneller gemacht. Unsere Sprints dauerten vorher fünf Tage",
+      "full_content_de": "Ich habe ein Jahr damit verbracht, den gesamten Designprozess meines Studios rund um KI neu aufzubauen. Es hat uns nicht schneller gemacht, und genau deshalb hat es funktioniert. Es hinterließ auch eine Art Schulden, über die niemand spricht. Der am schnellsten aussehende Teil des Prozesses ist der, bei dem ein Mensch die Schere halten muss. Jeder verkauft Ihnen diesen Pitch über KI und Design: Es ist schneller. Zehnmal schneller. Versenden Sie an einem Nachmittag, was früher einen Monat dauerte, und beobachten Sie, wie sich ein Prototyp zusammenbaut, während Sie an Ihrem Kaffee nippen. Ich habe es auch gekauft. Dann verbrachte ich den größten Teil eines Jahres damit, den gesamten Designprozess meines Studios rund um KI neu aufzubauen, für vier echte Produkte, mit echten Kunden, echten Fristen und der Zusammenarbeit mit echten Ingenieuren, die an Standardergebnisse gewöhnt waren. Um ehrlich zu sein: Es hat uns nicht schneller gemacht. Unsere Sprints dauerten vorher fünf Tage"
+    },
+    {
+      "id": "0a938f7689",
+      "title": "an aluminum café table that lifts away from the wall redefines flexible hospitality furniture",
+      "summary_original": "Fold, lift, remove: George & Willy’s modular compact café table George & Willy’s Wall Mounted Café Table + Removable Table Bracket responds to the increasing spatial constraints of contemporary hospitality environments, where furniture is required to provide flexibility without permanent spatial occupation. The system is designed to enable seating only when required, with the option to fully clear wall-mounted tables when not in use. The table consists of a precision-engineered aluminum structure fixed directly to the wall, allowing floor space to remain unobstructed. A reversible mounting pole enables two installation heights: a higher configuration for use with benches or raised seating surfaces, and a lower position for more traditional café -style arrangements with increased legroom. T",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/07/wall-mounted-cafe-table-removable-table-bracket-george-willy-designboom-700-500x400-22b08q85r679.jpg",
+      "url": "https://www.designboom.com/design/aluminum-cafe-table-wall-flexible-hospitality-furniture-george-willy/",
+      "source": "Designboom",
+      "category": "general",
+      "published_raw": "Sun, 05 Jul 2026 04:30:56 +0000",
+      "title_de": "Ein Aluminium-Cafétisch, der sich von der Wand abheben lässt, definiert flexible Gastronomiemöbel neu",
+      "summary_de": "Zusammenklappen, anheben, entfernen: Der modulare, kompakte Café-Tisch von George & Willy. Der an der Wand montierte Café-Tisch + abnehmbare Tischhalterung von George & Willy reagiert auf die zunehmenden räumlichen Einschränkungen moderner Gastronomieumgebungen, in denen Möbel Flexibilität bieten müssen, ohne dass der Raum dauerhaft beansprucht wird. Das System ist so konzipiert, dass Sitzgelegenheiten nur bei Bedarf möglich sind, mit der Option, an der Wand montierte Tische vollständig freizugeben, wenn sie nicht verwendet werden. Der Tisch besteht aus einer präzisionsgefertigten Aluminiumstruktur, die direkt an der Wand befestigt wird, sodass der Boden frei bleibt. Eine umkehrbare Montagestange ermöglicht zwei Installationshöhen: eine höhere Konfiguration für die Verwendung mit Bänken oder erhöhten Sitzflächen und eine niedrigere Position für traditionellere Anordnungen im Café-Stil mit mehr Beinfreiheit. T",
+      "full_content_de": "Zusammenklappen, anheben, entfernen: Der modulare, kompakte Café-Tisch von George & Willy. Der an der Wand montierte Café-Tisch + abnehmbare Tischhalterung von George & Willy reagiert auf die zunehmenden räumlichen Einschränkungen moderner Gastronomieumgebungen, in denen Möbel Flexibilität bieten müssen, ohne dass der Raum dauerhaft beansprucht wird. Das System ist so konzipiert, dass Sitzgelegenheiten nur bei Bedarf möglich sind, mit der Option, an der Wand montierte Tische vollständig freizugeben, wenn sie nicht verwendet werden. Der Tisch besteht aus einer präzisionsgefertigten Aluminiumstruktur, die direkt an der Wand befestigt wird, sodass der Boden frei bleibt. Eine umkehrbare Montagestange ermöglicht zwei Installationshöhen: eine höhere Konfiguration für die Verwendung mit Bänken oder erhöhten Sitzflächen und eine niedrigere Position für traditionellere Anordnungen im Café-Stil mit mehr Beinfreiheit. T"
+    },
+    {
+      "id": "5293673c6c",
+      "title": "a bookstore inside cobe copenhagen: a material library of architecture, cities, and ideas",
+      "summary_original": "an architecture bookstore inside Cobe’s Copenhagen studio Located within Cobe’s studio in Copenhagen , the bookstore offers a carefully curated selection of urbanism, landscape , architecture, and design titles from around the world. Visitors are invited not only to browse and purchase books , but also to spend time reading, discovering new ideas, and engaging with architecture while enjoying complimentary coffee . The interiors have been designed by Danish architect Nikolaj Mentze from Studio 0405 and feature bespoke steel shelving, a long wooden bench with café seating, and wooden display cases, creating a warm and inviting environment for reading , reflection, and informal exchange. Architectural models from Cobe are also displayed throughout the space, further connecting the bookstore ",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/07/cobe-public-architecture-bookstore-copenhagen-studio-designboom-700-500x400-22b08q85r808.jpg",
+      "url": "https://www.designboom.com/architecture/bookstore-cobe-copenhagen-material-library-architecture-cities-ideas/",
+      "source": "Designboom",
+      "category": "general",
+      "published_raw": "Sun, 05 Jul 2026 02:50:54 +0000",
+      "title_de": "Ein Buchladen im Cobe Copenhagen: eine materielle Bibliothek mit Architektur, Städten und Ideen",
+      "summary_de": "eine Architekturbuchhandlung in Cobes Studio in Kopenhagen. Die Buchhandlung befindet sich in Cobes Studio in Kopenhagen und bietet eine sorgfältig kuratierte Auswahl an Titeln aus den Bereichen Städtebau, Landschaft, Architektur und Design aus der ganzen Welt. Besucher sind nicht nur dazu eingeladen, Bücher zu durchstöbern und zu kaufen, sondern auch Zeit mit Lesen zu verbringen, neue Ideen zu entdecken und sich mit der Architektur auseinanderzusetzen, während sie kostenlosen Kaffee genießen. Die Innenräume wurden vom dänischen Architekten Nikolaj Mentze vom Studio 0405 entworfen und verfügen über maßgeschneiderte Stahlregale, eine lange Holzbank mit Café-Sitzgelegenheiten und Holzvitrinen, die eine warme und einladende Umgebung zum Lesen, Nachdenken und informellen Austausch schaffen. Im gesamten Raum sind auch Architekturmodelle von Cobe ausgestellt, die den Buchladen noch stärker miteinander verbinden",
+      "full_content_de": "eine Architekturbuchhandlung in Cobes Studio in Kopenhagen. Die Buchhandlung befindet sich in Cobes Studio in Kopenhagen und bietet eine sorgfältig kuratierte Auswahl an Titeln aus den Bereichen Städtebau, Landschaft, Architektur und Design aus der ganzen Welt. Besucher sind nicht nur dazu eingeladen, Bücher zu durchstöbern und zu kaufen, sondern auch Zeit mit Lesen zu verbringen, neue Ideen zu entdecken und sich mit der Architektur auseinanderzusetzen, während sie kostenlosen Kaffee genießen. Die Innenräume wurden vom dänischen Architekten Nikolaj Mentze vom Studio 0405 entworfen und verfügen über maßgeschneiderte Stahlregale, eine lange Holzbank mit Café-Sitzgelegenheiten und Holzvitrinen, die eine warme und einladende Umgebung zum Lesen, Nachdenken und informellen Austausch schaffen. Im gesamten Raum sind auch Architekturmodelle von Cobe ausgestellt, die den Buchladen noch stärker miteinander verbinden"
+    },
+    {
+      "id": "ef9d6e3bf1",
+      "title": "the otherworldly forms of ken price’s solo exhibition at PoMo in norway",
+      "summary_original": "Alien Terrain in Trondheim, Norway At PoMo, the museum for contemporary and modern art in Trondheim, Norway , the solo show for Ken Price, Alien Terrain (2026), fills its halls with the late American artist’s experimental ceramic sculptures . The space’s interior is almost completely white—it aesthetically unifies the ornate Ionic columns, the exhibition plinths and the arched windows. When Price’s works, globules of ceramic that bulge and stack in a fantastic mix of colors, are arranged within the space, they evoke an otherworldly quality that encapsulates the particular methodology he brought to the medium. Ken Price – Alien Terrain, PoMo, Trondheim, 2026 | all installation view photography by Uli Holz / PoMo, Trondheim © Estate of Ken Price Science fiction and extraterrestrial creations",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/07/ken-price-pomo-designboom-700-500x400-22b08q85r523.jpg",
+      "url": "https://www.designboom.com/art/otherworldly-ken-prices-solo-exhibition-pomo-norway/",
+      "source": "Designboom",
+      "category": "general",
+      "published_raw": "Sat, 04 Jul 2026 19:45:45 +0000",
+      "title_de": "Die jenseitigen Formen der Einzelausstellung von Ken Price bei PoMo in Norwegen",
+      "summary_de": "Alien Terrain in Trondheim, Norwegen Im PoMo, dem Museum für zeitgenössische und moderne Kunst in Trondheim, Norwegen, füllt die Einzelausstellung für Ken Price, Alien Terrain (2026), ihre Säle mit den experimentellen Keramikskulpturen des verstorbenen amerikanischen Künstlers. Das Innere des Raums ist fast vollständig weiß – es vereint auf ästhetische Weise die verzierten ionischen Säulen, die Ausstellungssockel und die Bogenfenster. Wenn Price‘ Werke, Keramikkügelchen, die sich in einem fantastischen Farbmix ausbeulen und stapeln, im Raum arrangiert werden, rufen sie eine jenseitige Qualität hervor, die die besondere Methodik verkörpert, die er in das Medium eingebracht hat. Ken Price – Alien Terrain, PoMo, Trondheim, 2026 | Alle Installationsansichten, Fotografien von Uli Holz / PoMo, Trondheim © Nachlass von Ken Price Science-Fiction und außerirdische Schöpfungen",
+      "full_content_de": "Alien Terrain in Trondheim, Norwegen Im PoMo, dem Museum für zeitgenössische und moderne Kunst in Trondheim, Norwegen, füllt die Einzelausstellung für Ken Price, Alien Terrain (2026), ihre Säle mit den experimentellen Keramikskulpturen des verstorbenen amerikanischen Künstlers. Das Innere des Raums ist fast vollständig weiß – es vereint auf ästhetische Weise die verzierten ionischen Säulen, die Ausstellungssockel und die Bogenfenster. Wenn Price‘ Werke, Keramikkügelchen, die sich in einem fantastischen Farbmix ausbeulen und stapeln, im Raum arrangiert werden, rufen sie eine jenseitige Qualität hervor, die die besondere Methodik verkörpert, die er in das Medium eingebracht hat. Ken Price – Alien Terrain, PoMo, Trondheim, 2026 | Alle Installationsansichten, Fotografien von Uli Holz / PoMo, Trondheim © Nachlass von Ken Price Science-Fiction und außerirdische Schöpfungen"
+    },
     {
       "id": "4fbbd12721",
       "title": "Blender in Annecy 2026",
@@ -1246,71 +1311,6 @@
       "title_de": "NEU: Webinar »KI-Agenten in der Praxis«: Was sie können – und was nicht",
       "summary_de": "KI schreibt Texte, erzeugt Bilder – das kennen die meisten. Agentische KI-Agenten versprechen mehr als Text- und Bildgenerierung: Sie können Aufgaben eigenständig ausführen und ganze Prozesse automatisieren. Doch wo bringen sie Kreativen heute echten Mehrwert? Die Masterclass von Simon Graff am 19. & 20. August 2026 liefert Antworten aus der Praxis. KI funktioniert anders: Sie erledigt eigenständig mehrere Schritte hintereinander, verknüpft Tools, trifft Entscheidungen und läuft dabei oft vollautomatisch durch. Für Kreative wirft das eine naheliegende Frage auf: Was bedeutet das für meine Arbeit? Genau diese Frage stellt Simon Graff im Webinar – ohne Buzzword-Bingo und ohne leere Versprechen. Simon zeigt stattdessen ein klares Bild davon, wo KI-Agenten heute wirklich helfen, wo sie nur ",
       "full_content_de": "KI schreibt Texte, erzeugt Bilder – das kennen die meisten. Agentische KI-Agenten versprechen mehr als Text- und Bildgenerierung: Sie können Aufgaben eigenständig ausführen und ganze Prozesse automatisieren. Doch wo bringen sie Kreativen heute echten Mehrwert? Die Masterclass von Simon Graff am 19. & 20. August 2026 liefert Antworten aus der Praxis. KI funktioniert anders: Sie erledigt eigenständig mehrere Schritte hintereinander, verknüpft Tools, trifft Entscheidungen und läuft dabei oft vollautomatisch durch. Für Kreative wirft das eine naheliegende Frage auf: Was bedeutet das für meine Arbeit? Genau diese Frage stellt Simon Graff im Webinar – ohne Buzzword-Bingo und ohne leere Versprechen. Simon zeigt stattdessen ein klares Bild davon, wo KI-Agenten heute wirklich helfen, wo sie nur "
-    },
-    {
-      "id": "f834a5ad42",
-      "title": "Margo’s Got Money Troubles Title Sequence | Peter Anderson Studio",
-      "summary_original": "Peter-Anderson-Studio-Margos-Got-Money-Troubles-Title-Sequence-016-1920&#215;1080",
-      "image": "https://s35726.pcdn.co/wp-content/uploads/2026/06/Peter-Anderson-Studio-Margos-Got-Money-Troubles-Title-Sequence-016-1920x1080-1-700x394.jpg",
-      "url": "https://motionographer.com/quickie/margos-got-money-troubles-title-sequence-peter-anderson-studio/",
-      "source": "Motionographer",
-      "category": "motion",
-      "published_raw": "Mon, 29 Jun 2026 13:10:49 +0000",
-      "title_de": "Margos Got Money Troubles Titelsequenz | Peter Anderson Studio",
-      "summary_de": "Peter-Anderson-Studio-Margos-Got-Money-Troubles-Title-Sequence-016-1920×1080",
-      "full_content_de": "Peter-Anderson-Studio-Margos-Got-Money-Troubles-Title-Sequence-016-1920×1080"
-    },
-    {
-      "id": "cccdb4cc9b",
-      "title": "Behind the Scenes: Somnus",
-      "summary_original": "Do you know what 8 days without sleep does to a person? Somnus is a haunting movie by Zane Olson, describing the mysterious arrival of giants and the loss of sleep everywhere on earth. First and foremost this project wouldn’t have been worth the effort has it not been for Håvard Dalen‘s LensSim addon. I [...] Source",
-      "image": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=600&q=80",
-      "url": "https://www.blendernation.com/2026/06/29/behind-the-scenes-somnus/",
-      "source": "BlenderNation",
-      "category": "visual",
-      "published_raw": "Mon, 29 Jun 2026 06:00:20 +0000",
-      "title_de": "Hinter den Kulissen: Somnus",
-      "summary_de": "Wissen Sie, was 8 Tage ohne Schlaf mit einem Menschen machen? Somnus ist ein eindringlicher Film von Zane Olson, der die mysteriöse Ankunft von Riesen und den Schlafverlust überall auf der Erde beschreibt. Erstens wäre dieses Projekt ohne das LensSim-Add-on von Håvard Dalen die Mühe nicht wert gewesen. Ich [...] Quelle",
-      "full_content_de": "Wissen Sie, was 8 Tage ohne Schlaf mit einem Menschen machen? Somnus ist ein eindringlicher Film von Zane Olson, der die mysteriöse Ankunft von Riesen und den Schlafverlust überall auf der Erde beschreibt. Erstens wäre dieses Projekt ohne das LensSim-Add-on von Håvard Dalen die Mühe nicht wert gewesen. Ich [...] Quelle"
-    },
-    {
-      "id": "6ac8913b1a",
-      "title": "Atari’s Art and Design Told Video Game Stories That 8 Bits Could Never Do",
-      "summary_original": "Long before modern graphics could do all the storytelling, Atari's box art fueled the imagination gap, with illustrators transforming 8-bit pixels into near-cinematic adventures. The post Atari's Art and Design Told Video Game Stories That 8 Bits Could Never Do appeared first on DIELINE .",
-      "image": "https://thedieline.com/wp-content/uploads/2026/06/Atari-2600-box-art-collage-DIELINE-3840x2160-1-scaled.png",
-      "url": "https://thedieline.com/ataris-art-and-design-told-video-game-stories-that-8-bits-could-never-do/",
-      "source": "The Dieline",
-      "category": "branding",
-      "published_raw": "Mon, 29 Jun 2026 09:09:00 +0000",
-      "title_de": "Ataris Kunst und Design erzählten Videospielgeschichten, die 8 Bits niemals schaffen könnten",
-      "summary_de": "Lange bevor moderne Grafiken die ganze Geschichte erzählen konnten, vergrößerte Ataris Box-Art die Lücke in der Vorstellungskraft, indem Illustratoren 8-Bit-Pixel in fast filmische Abenteuer verwandelten. Der Beitrag „Atari’s Art and Design Told Video Game Stories That 8 Bits Could Never Do“ erschien zuerst auf DIELINE.",
-      "full_content_de": "Lange bevor moderne Grafiken die ganze Geschichte erzählen konnten, vergrößerte Ataris Box-Art die Lücke in der Vorstellungskraft, indem Illustratoren 8-Bit-Pixel in fast filmische Abenteuer verwandelten. Der Beitrag „Atari’s Art and Design Told Video Game Stories That 8 Bits Could Never Do“ erschien zuerst auf DIELINE."
-    },
-    {
-      "id": "b3404a3efe",
-      "title": "7UP Turned Four Guatemalan Destinations Into Cans Worth Collecting",
-      "summary_original": "7UP's Destinos Guatemala collection, designed by PepsiCo Design's Latin America team, turns four iconic Guatemalan destinations into a collectible can series that feels more like a travel poster drop than a soda promotion. Tikal, Lago Atitlán, Antigua, and El Paredón each get their own illustrated scene, and suddenly you need all four. The post 7UP Turned Four Guatemalan Destinations Into Cans Worth Collecting appeared first on DIELINE .",
-      "image": "https://thedieline.com/wp-content/uploads/2026/06/7up.png",
-      "url": "https://thedieline.com/7up-turned-four-guatemalan-destinations-into-cans-worth-collecting/",
-      "source": "The Dieline",
-      "category": "branding",
-      "published_raw": "Mon, 29 Jun 2026 07:00:00 +0000",
-      "title_de": "7UP hat vier Reiseziele in Guatemala in Sammeldosen verwandelt",
-      "summary_de": "Die Destinos Guatemala-Kollektion von 7UP, entworfen vom lateinamerikanischen Team von PepsiCo Design, verwandelt vier ikonische guatemaltekische Reiseziele in eine Sammeldosenserie, die eher wie ein Tropfen auf Reiseplakaten als wie eine Limonadenwerbung wirkt. Tikal, Lago Atitlán, Antigua und El Paredón bekommen jeweils ihre eigene illustrierte Szene, und plötzlich braucht man alle vier. Der Beitrag „7UP verwandelte vier Reiseziele in Guatemala in sammelwürdige Dosen“ erschien zuerst auf DIELINE.",
-      "full_content_de": "Die Destinos Guatemala-Kollektion von 7UP, entworfen vom lateinamerikanischen Team von PepsiCo Design, verwandelt vier ikonische guatemaltekische Reiseziele in eine Sammeldosenserie, die eher wie ein Tropfen auf Reiseplakaten als wie eine Limonadenwerbung wirkt. Tikal, Lago Atitlán, Antigua und El Paredón bekommen jeweils ihre eigene illustrierte Szene, und plötzlich braucht man alle vier. Der Beitrag „7UP verwandelte vier Reiseziele in Guatemala in sammelwürdige Dosen“ erschien zuerst auf DIELINE."
-    },
-    {
-      "id": "847d322dce",
-      "title": "Shelf Life 117: Who Does Artisanship Belong To?",
-      "summary_original": "When student designer Muskaan Kasat won a Pentawards for her Jaipur Blue Pottery-inspired spirits concept, she didn't expect to see a near-identical aesthetic on a Diageo India bottle months later. The story of Mitini and Godawan 173 opens up a bigger question: in a design world hungry for craft and cultural authenticity, who really owns an idea? The post Shelf Life 117: Who Does Artisanship Belong To? appeared first on DIELINE .",
-      "image": "https://thedieline.com/wp-content/uploads/2026/06/STUDENT-WEEK-2.21.37-PM.png",
-      "url": "https://thedieline.com/shelf-life-117-who-does-artisanship-belong-to/",
-      "source": "The Dieline",
-      "category": "branding",
-      "published_raw": "Mon, 29 Jun 2026 03:00:00 +0000",
-      "title_de": "Haltbarkeit 117: Wem gehört das Kunsthandwerk?",
-      "summary_de": "Als die studentische Designerin Muskaan Kasat einen Pentaward für ihr von der Jaipur Blue Pottery inspiriertes Spirituosenkonzept gewann, hatte sie nicht damit gerechnet, Monate später eine annähernd identische Ästhetik auf einer Diageo India-Flasche zu sehen. Die Geschichte von Mitini und Godawan 173 wirft eine größere Frage auf: Wem gehört in einer Designwelt, die nach Handwerk und kultureller Authentizität hungert, wirklich eine Idee? Der Beitrag Haltbarkeit 117: Wem gehört das Kunsthandwerk? erschien zuerst auf DIELINE.",
-      "full_content_de": "Als die studentische Designerin Muskaan Kasat einen Pentaward für ihr von der Jaipur Blue Pottery inspiriertes Spirituosenkonzept gewann, hatte sie nicht damit gerechnet, Monate später eine annähernd identische Ästhetik auf einer Diageo India-Flasche zu sehen. Die Geschichte von Mitini und Godawan 173 wirft eine größere Frage auf: Wem gehört in einer Designwelt, die nach Handwerk und kultureller Authentizität hungert, wirklich eine Idee? Der Beitrag Haltbarkeit 117: Wem gehört das Kunsthandwerk? erschien zuerst auf DIELINE."
     }
   ]
 }
